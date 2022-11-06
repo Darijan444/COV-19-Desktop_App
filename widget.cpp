@@ -24,3 +24,9 @@ void Widget::on_pushButton_clicked()
     QMessageBox::information(this,"Information","Hello Darijan!!");
 }
 
+
+void Widget::on_pushButton_2_clicked()
+{
+    QMessageBox::information(this,"Information","Hello to you too Ryuu!!");
+}
+
