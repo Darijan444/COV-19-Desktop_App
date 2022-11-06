@@ -28,5 +28,6 @@ void Widget::on_pushButton_clicked()
 void Widget::on_pushButton_2_clicked()
 {
     QMessageBox::information(this,"Information","Hello to you too Ryuu!!");
+    QMessageBox::information(this,"Information","This is just random text.");
 }
 
