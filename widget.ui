@@ -26,6 +26,19 @@
     <string>Click Me</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>250</y>
+     <width>111</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Click me also</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

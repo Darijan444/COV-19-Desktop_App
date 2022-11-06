@@ -21,6 +21,12 @@ Widget::~Widget()
 //Test
 void Widget::on_pushButton_clicked()
 {
-    QMessageBox::information(this,"Information","Hello Darijan!!");
+    QMessageBox::information(this,"Information","Hi Darijan!!");
+}
+
+
+void Widget::on_pushButton_2_clicked()
+{
+    QMessageBox::information(this,"Information","Hello to you too Ryuu!!");
 }
 
