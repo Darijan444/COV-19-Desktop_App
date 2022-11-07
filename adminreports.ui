@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AdminReports</class>
+ <widget class="QDialog" name="AdminReports">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>768</width>
+    <height>394</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 24pt &quot;.AppleSystemUIFont&quot;;</string>
+   </property>
+   <property name="text">
+    <string>My health account </string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonLogout">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>20</y>
+     <width>100</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Log out</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_6">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>20</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>111</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label_19">
+       <property name="text">
+        <string>Icon</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_17">
+       <property name="font">
+        <font>
+         <family>.AppleSystemUIFont</family>
+         <pointsize>14</pointsize>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Admin</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>90</y>
+     <width>551</width>
+     <height>261</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>90</y>
+     <width>120</width>
+     <height>209</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QPushButton" name="pushButtonDashboard">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(0, 0, 0,0.1); 
+	border: none; 
+	color: rgb(0, 0, 0); 
+	font: 16px;
+	text-align: left;
+} 
+
+QPushButton:hover { 
+	background-color: rgb(0, 0, 0, 0.1); 
+	border: none; 
+	color: rgb(0, 43, 255); 
+}
+</string>
+      </property>
+      <property name="text">
+       <string>1. Dashboard</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer_4">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>13</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item alignment="Qt::AlignLeft">
+     <widget class="QPushButton" name="pushButtonUsers">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(0, 0, 0,0.1); 
+	border: none; 
+	color: rgb(0, 0, 0); 
+	font: 16px;
+	text-align: left;
+} 
+
+QPushButton:hover { 
+	background-color: rgb(0, 0, 0, 0.1); 
+	border: none; 
+	color: rgb(0, 43, 255); 
+}
+</string>
+      </property>
+      <property name="text">
+       <string>2. Users</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer_5">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>13</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButtonReports">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(0, 0, 0,0.1); 
+	border: none; 
+	color: rgb(0, 0, 0); 
+	font: 16px;
+	text-align: left;
+} 
+
+QPushButton:hover { 
+	background-color: rgb(0, 0, 0, 0.1); 
+	border: none; 
+	color: rgb(0, 43, 255); 
+}
+</string>
+      </property>
+      <property name="text">
+       <string>3. Reports</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer_6">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>13</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButtonLogs">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(0, 0, 0,0.1); 
+	border: none; 
+	color: rgb(0, 0, 0); 
+	font: 16px;
+	text-align: left;
+} 
+
+QPushButton:hover { 
+	background-color: rgb(0, 0, 0, 0.1); 
+	border: none; 
+	color: rgb(0, 43, 255); 
+}
+</string>
+      </property>
+      <property name="text">
+       <string>4. Logs</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -12,13 +12,52 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
-find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets Sql)
 
 set(PROJECT_SOURCES
         main.cpp
-        widget.cpp
-        widget.h
-        widget.ui
+
+        ######################################
+        #Common
+        ######################################
+        landingpage.h
+        landingpage.cpp
+        landingpage.ui
+
+        login.h
+        login.cpp
+        login.ui
+
+
+        ######################################
+        #User
+        ######################################
+
+
+
+
+        ######################################
+        #Admin
+        ######################################
+        adminmain.h
+        adminmain.cpp
+        adminmain.ui
+
+        adminusers.h
+        adminusers.cpp
+        adminusers.ui
+
+        adminreports.h
+        adminreports.cpp
+        adminreports.ui
+
+        adminlogs.h
+        adminlogs.cpp
+        adminlogs.ui
+
+        adminuserdetail.h
+        adminuserdetail.cpp
+        adminuserdetail.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
@@ -44,7 +83,7 @@ else()
     endif()
 endif()
 
-target_link_libraries(COV-19-Desktop_App PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(COV-19-Desktop_App PRIVATE Qt${QT_VERSION_MAJOR}::Widgets Qt${QT_VERSION_MAJOR}::Sql)
 
 set_target_properties(COV-19-Desktop_App PROPERTIES
     MACOSX_BUNDLE_GUI_IDENTIFIER my.example.com
