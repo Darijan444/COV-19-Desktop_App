@@ -32,6 +32,9 @@ set(PROJECT_SOURCES
         signup.cpp
         signup.ui
 
+        database.h
+        database.cpp
+
 
         ######################################
         #User
