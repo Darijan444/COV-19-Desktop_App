@@ -28,12 +28,17 @@ set(PROJECT_SOURCES
         login.cpp
         login.ui
 
+        signup.h
+        signup.cpp
+        signup.ui
+
 
         ######################################
         #User
         ######################################
-
-
+        userpage.h
+        userpage.cpp
+        userpage.ui
 
 
         ######################################
