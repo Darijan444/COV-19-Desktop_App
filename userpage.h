@@ -3,6 +3,8 @@
 
 #include <QDialog>
 
+#include <QSqlDatabase>
+
 namespace Ui {
 class UserPage;
 }
@@ -17,6 +19,8 @@ public:
 
 private:
     Ui::UserPage *ui;
+
+    QSqlDatabase db;
 };
 
 #endif // USERPAGE_H
