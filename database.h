@@ -4,23 +4,13 @@
 #include <QDialog>
 #include <QSqlDatabase>
 
-namespace Ui {
-class Database;
-}
-
-class Database : public QDialog
+class Database
 {
-    Q_OBJECT
-
 public:
-    explicit Database(QWidget *parent = nullptr);
-    ~Database();
+    Database();
 
     QSqlDatabase db;
     void Databaseconect();
-
-private:
-    Ui::Database *ui;
 };
 
 #endif // DATABASE_H
