@@ -1,8 +1,10 @@
 #include "login.h"
 #include "ui_login.h"
 #include "landingpage.h"
-#include "signup.h"
 #include "userpage.h"
+#include "database.h"
+#include "adminmain.h"
+
 #include <QDebug>
 
 
@@ -12,35 +14,43 @@ Login::Login(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    //call database(Need to improve)
+    Database * database = new Database();
 
-    //Login -> UserPage(Need Validation)
-    connect(ui->pushButtonConfirm,&QPushButton::clicked,[=]()
-    {
+
+    //Login->UserPage (Need validation)
+    connect(ui->pushButtonConfirm,&QPushButton::clicked,[=](){
+
         //Get user input
         email = ui->lineEditEmail->text();
         password = ui->lineEditPassword->text();
 
         QSqlQuery query(db);
 
-        if(query.exec("SELECT * FROM user WHERE email= '"+email+"' and password='"+password+"'"))
-        {
+
+        if(query.exec("SELECT * FROM user WHERE email='"+email+"' and password='"+password+"'")){
+
             int count = 0;
 
-            while (query.next())
-            {
+            while (query.next()) {
                 count++;
                 qDebug() << count;
             }
-            if(count==1)
-            {
+
+            if(email == "admin" && password == "admin"){
+                QMessageBox::information(this,"Login","Login successfully!");
+                AdminMain * adminmain = new AdminMain(this);
+                this->hide();
+                adminmain->show();
+
+            } else if(count==1){
                 QMessageBox::information(this,"Login","Login successfully!");
 
                 UserPage * userPage = new UserPage(this);
                 this->hide();
                 userPage->show();
-            }else
-            {
-              QMessageBox::information(this,"Login","You entered wrong information");
+            }else{
+                QMessageBox::information(this,"Login","You entered wrong information");
             }
         };
     });

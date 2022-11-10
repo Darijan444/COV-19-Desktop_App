@@ -14,8 +14,14 @@ AdminUsers::AdminUsers(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    userList();
+    //User Icon size
+    int iconSize = 25;
 
+    QPixmap admin(":/Images/user.png");
+    ui->labelAdmin->setPixmap(admin.scaled(iconSize,iconSize));
+
+    //Show user lists
+    userList();
 
     //->Landingpage
     connect(ui->pushButtonLogout,&QPushButton::clicked,[=](){

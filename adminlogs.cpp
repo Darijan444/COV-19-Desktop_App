@@ -5,11 +5,23 @@
 #include "adminlogs.h"
 #include "ui_adminlogs.h"
 
+#include <QSqlQuery>
+#include<QSqlQueryModel>
+
 AdminLogs::AdminLogs(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::AdminLogs)
 {
     ui->setupUi(this);
+
+    //User Icon size
+    int iconSize = 25;
+
+    QPixmap admin(":/Images/user.png");
+    ui->labelAdmin->setPixmap(admin.scaled(iconSize,iconSize));
+
+    //Show user reports
+    logs();
 
     //->Landingpage
     connect(ui->pushButtonLogout,&QPushButton::clicked,[=](){
@@ -50,4 +62,19 @@ AdminLogs::AdminLogs(QWidget *parent) :
 AdminLogs::~AdminLogs()
 {
     delete ui;
+}
+
+void AdminLogs::logs()
+{
+    auto query = QSqlQuery(db);
+        QString select{"select * from [logs];"};
+
+        //execute the query
+        if(!query.exec(select))
+            qDebug() << "Cannot select from members";
+
+        //define the model
+        QSqlQueryModel * model = new QSqlQueryModel;
+        model->setQuery(query);
+        ui->tableView->setModel(model);
 }
