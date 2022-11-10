@@ -35,6 +35,7 @@ set(PROJECT_SOURCES
         database.h
         database.cpp
 
+        Images.qrc
 
 
         ######################################

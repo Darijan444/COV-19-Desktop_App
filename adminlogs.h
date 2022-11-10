@@ -3,6 +3,8 @@
 
 #include <QDialog>
 
+#include <QSqlDatabase>
+
 namespace Ui {
 class AdminLogs;
 }
@@ -14,6 +16,10 @@ class AdminLogs : public QDialog
 public:
     explicit AdminLogs(QWidget *parent = nullptr);
     ~AdminLogs();
+
+    void logs();
+
+    QSqlDatabase db;
 
 private:
     Ui::AdminLogs *ui;

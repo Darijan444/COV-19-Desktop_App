@@ -11,6 +11,12 @@ AdminMain::AdminMain(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    //User Icon size
+    int iconSize = 25;
+
+    QPixmap admin(":/Images/user.png");
+    ui->labelAdmin->setPixmap(admin.scaled(iconSize,iconSize));
+
     //->Landingpage
     connect(ui->pushButtonLogout,&QPushButton::clicked,[=](){
         LandingPage * landingpage = new LandingPage(this);
