@@ -1,14 +1,15 @@
 #ifndef LANDINGPAGE_H
 #define LANDINGPAGE_H
 
-#include <QDialog>
+#include <QMainWindow>
 
+#include <QPushButton>
 
 namespace Ui {
 class LandingPage;
 }
 
-class LandingPage : public QDialog
+class LandingPage : public QMainWindow
 {
     Q_OBJECT
 
@@ -17,11 +18,8 @@ public:
     ~LandingPage();
 
 
-
 private:
     Ui::LandingPage *ui;
 };
 
 #endif // LANDINGPAGE_H
-
-

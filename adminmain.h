@@ -3,6 +3,10 @@
 
 #include <QDialog>
 
+#include <QChartView>
+
+#include "database.h"
+
 namespace Ui {
 class AdminMain;
 }
@@ -15,14 +19,26 @@ public:
     explicit AdminMain(QWidget *parent = nullptr);
     ~AdminMain();
 
-//Slot
-public slots:
-    void labelUsers();
+//    void createBarChart();
 
 
 
 private:
     Ui::AdminMain *ui;
+
+    QList<QChartView *> charts;
+//    Ui::Widget *ui;
+
+    QChart *createBarChart(int valueCount) const;
+
+    QSqlDatabase db;
+
+    int userCount;
+    int twoDosesCount;
+    int RATPositiveCount;
+    int issuedVaccinePassCount;
+    int reportsCount;
+
 };
 
 #endif // ADMINMAIN_H

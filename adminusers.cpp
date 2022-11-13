@@ -3,6 +3,7 @@
 #include "adminusers.h"
 #include "adminreports.h"
 #include "adminlogs.h"
+#include "adminuserdetail.h"
 #include "ui_adminusers.h"
 
 #include <QSqlQuery>
@@ -57,6 +58,18 @@ AdminUsers::AdminUsers(QWidget *parent) :
         this->hide();
         adminLogs->show();
     });
+
+    //->AdminUserDetail
+    connect(ui->pushButtonEdit,&QPushButton::clicked,[=](){
+//        id = ui->spinBoxUserID->value();
+//        id = ui->spinBoxUserID->displayIntegerBase() ;
+        num = ui->spinBoxUserID->value();
+
+//        AdminUserDetail * adminuserdetail = new AdminUserDetail(this, id);
+        AdminUserDetail * adminuserdetail = new AdminUserDetail(this, num);
+        this->hide();
+        adminuserdetail->show();
+    });
 }
 
 AdminUsers::~AdminUsers()
@@ -69,16 +82,14 @@ AdminUsers::~AdminUsers()
 void AdminUsers::userList()
 {
     auto query = QSqlQuery(db);
-        QString select{"select * from [user];"};
+    if(!query.exec("select * from user;"))
+        qDebug() << "Cannot select from members";
 
-        //execute the query
-        if(!query.exec(select))
-            qDebug() << "Cannot select from members";
-
-        //define the model
-        QSqlQueryModel * model = new QSqlQueryModel;
-        model->setQuery(query);
-        ui->tableView->setModel(model);
+    //define the model
+    QSqlQueryModel * model = new QSqlQueryModel;
+    model->setQuery(query);
+    ui->tableView->setModel(model);
+//        ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
 }
 
 

@@ -67,15 +67,12 @@ AdminReports::~AdminReports()
 void AdminReports::userReports()
 {
     auto query = QSqlQuery(db);
-        QString select{"select * from [reports];"};
+    if(!query.exec("select * from reports;"))
+        qDebug() << "Cannot select from members";
 
-        //execute the query
-        if(!query.exec(select))
-            qDebug() << "Cannot select from members";
-
-        //define the model
-        QSqlQueryModel * model = new QSqlQueryModel;
-        model->setQuery(query);
-        ui->tableView->setModel(model);
+    //define the model
+    QSqlQueryModel * model = new QSqlQueryModel;
+    model->setQuery(query);
+    ui->tableView->setModel(model);
 }
 

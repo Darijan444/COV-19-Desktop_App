@@ -163,7 +163,7 @@ QPushButton:hover {
         <rect>
          <x>10</x>
          <y>40</y>
-         <width>141</width>
+         <width>181</width>
          <height>16</height>
         </rect>
        </property>
@@ -179,7 +179,7 @@ QPushButton:hover {
         <string notr="true">font: 12pt &quot;.AppleSystemUIFont&quot;;</string>
        </property>
        <property name="text">
-        <string>Explanation</string>
+        <string>Report any issues you may encounter. </string>
        </property>
       </widget>
       <widget class="QLabel" name="labelIconSend2">
@@ -195,7 +195,7 @@ QPushButton:hover {
         <string>Icon</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_4">
+      <widget class="QPushButton" name="pushButtonReportIssue">
        <property name="geometry">
         <rect>
          <x>110</x>
@@ -244,7 +244,7 @@ QPushButton:hover {
         <rect>
          <x>10</x>
          <y>40</y>
-         <width>141</width>
+         <width>191</width>
          <height>16</height>
         </rect>
        </property>
@@ -260,7 +260,7 @@ QPushButton:hover {
         <string notr="true">font: 12pt &quot;.AppleSystemUIFont&quot;;</string>
        </property>
        <property name="text">
-        <string>Explanation</string>
+        <string>View your Vaccination records.</string>
        </property>
       </widget>
       <widget class="QLabel" name="labelIconView2">
@@ -276,7 +276,7 @@ QPushButton:hover {
         <string>Icon</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_2">
+      <widget class="QPushButton" name="pushButtonVaccinationRecord">
        <property name="geometry">
         <rect>
          <x>110</x>
@@ -325,7 +325,7 @@ QPushButton:hover {
         <rect>
          <x>10</x>
          <y>40</y>
-         <width>141</width>
+         <width>181</width>
          <height>16</height>
         </rect>
        </property>
@@ -341,7 +341,7 @@ QPushButton:hover {
         <string notr="true">font: 12pt &quot;.AppleSystemUIFont&quot;;</string>
        </property>
        <property name="text">
-        <string>Explanation</string>
+        <string>Request your Vaccine Pass.</string>
        </property>
       </widget>
       <widget class="QLabel" name="labelIconPass">
@@ -357,7 +357,7 @@ QPushButton:hover {
         <string>Icon</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_3">
+      <widget class="QPushButton" name="pushButtonVaccinePass">
        <property name="geometry">
         <rect>
          <x>110</x>
@@ -406,7 +406,7 @@ QPushButton:hover {
         <rect>
          <x>10</x>
          <y>40</y>
-         <width>141</width>
+         <width>191</width>
          <height>16</height>
         </rect>
        </property>
@@ -422,7 +422,7 @@ QPushButton:hover {
         <string notr="true">font: 12pt &quot;.AppleSystemUIFont&quot;;</string>
        </property>
        <property name="text">
-        <string>Explanation</string>
+        <string>View your Covid-19 test results.</string>
        </property>
       </widget>
       <widget class="QLabel" name="labelIconView1">
@@ -487,7 +487,7 @@ QPushButton:hover {
         <rect>
          <x>10</x>
          <y>40</y>
-         <width>141</width>
+         <width>171</width>
          <height>16</height>
         </rect>
        </property>
@@ -503,7 +503,7 @@ QPushButton:hover {
         <string notr="true">font: 12pt &quot;.AppleSystemUIFont&quot;;</string>
        </property>
        <property name="text">
-        <string>Explanation</string>
+        <string>Report your RAT Results.</string>
        </property>
       </widget>
       <widget class="QLabel" name="labelIconSend1">
@@ -519,7 +519,7 @@ QPushButton:hover {
         <string>Icon</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_5">
+      <widget class="QPushButton" name="pushButtonRATResult">
        <property name="geometry">
         <rect>
          <x>110</x>

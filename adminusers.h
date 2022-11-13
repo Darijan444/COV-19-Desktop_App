@@ -22,6 +22,10 @@ public:
 
     QSqlDatabase db;
 
+    int id;
+    int num;
+
+
 private:
     Ui::AdminUsers *ui;
 };
