@@ -1,12 +1,12 @@
-#include "login.h"
-#include "ui_login.h"
 #include "landingpage.h"
+#include "login.h"
 #include "userpage.h"
-#include "database.h"
+#include "ui_login.h"
 #include "adminmain.h"
+#include "database.h"
+#include "userpage.h"
 
 #include <QDebug>
-
 
 Login::Login(QWidget *parent) :
     QDialog(parent),
@@ -14,8 +14,16 @@ Login::Login(QWidget *parent) :
 {
     ui->setupUi(this);
 
+
     //call database(Need to improve)
-    Database * database = new Database();
+//    DatabaseUsers * databaseUsers = new DatabaseUsers();
+
+    if(!db.open()){
+        qWarning() << "MainWindow::DatabaseConnect - ERROR: " << db.lastError().text();
+    }
+
+    //hide password
+    ui->lineEditPassword->setEchoMode(QLineEdit::Password);
 
 
     //Login->UserPage (Need validation)
@@ -25,8 +33,8 @@ Login::Login(QWidget *parent) :
         email = ui->lineEditEmail->text();
         password = ui->lineEditPassword->text();
 
-        QSqlQuery query(db);
 
+        QSqlQuery query(db);
 
         if(query.exec("SELECT * FROM user WHERE email='"+email+"' and password='"+password+"'")){
 
@@ -34,7 +42,6 @@ Login::Login(QWidget *parent) :
 
             while (query.next()) {
                 count++;
-                qDebug() << count;
             }
 
             if(email == "admin" && password == "admin"){
@@ -46,23 +53,24 @@ Login::Login(QWidget *parent) :
             } else if(count==1){
                 QMessageBox::information(this,"Login","Login successfully!");
 
-                UserPage * userPage = new UserPage(this);
+                //Give email to User Page
+                UserPage * userPage = new UserPage(this,email);
                 this->hide();
                 userPage->show();
+
+
             }else{
                 QMessageBox::information(this,"Login","You entered wrong information");
             }
         };
     });
 
-    //Login->LandingPage
-    connect(ui->pushButtonBack,&QPushButton::clicked,[=]()
-    {
+    //->LandingPage
+    connect(ui->pushButtonBack,&QPushButton::clicked,[=](){
         LandingPage * landingPage = new LandingPage(this);
         this->hide();
         landingPage->show();
     });
-
 
 }
 

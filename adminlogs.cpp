@@ -64,17 +64,15 @@ AdminLogs::~AdminLogs()
     delete ui;
 }
 
+
 void AdminLogs::logs()
 {
     auto query = QSqlQuery(db);
-        QString select{"select * from [logs];"};
+    if(!query.exec("select * from logs;"))
+        qDebug() << "Cannot select from members";
 
-        //execute the query
-        if(!query.exec(select))
-            qDebug() << "Cannot select from members";
-
-        //define the model
-        QSqlQueryModel * model = new QSqlQueryModel;
-        model->setQuery(query);
-        ui->tableView->setModel(model);
+    //define the model
+    QSqlQueryModel * model = new QSqlQueryModel;
+    model->setQuery(query);
+    ui->tableView->setModel(model);
 }

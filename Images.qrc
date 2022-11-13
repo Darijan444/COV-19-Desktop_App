@@ -4,5 +4,11 @@
         <file>Images/pass.png</file>
         <file>Images/user.png</file>
         <file>Images/view.png</file>
+        <file>Images/qrcode.png</file>
+        <file>Images/capsule.png</file>
+        <file>Images/RATKit.png</file>
+        <file>Images/vaccine.png</file>
+        <file>Images/test.png</file>
+        <file>Images/password.png</file>
     </qresource>
 </RCC>

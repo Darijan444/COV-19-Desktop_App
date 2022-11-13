@@ -1,22 +1,17 @@
 #include "database.h"
 
-#include <QSql>
-#include <QSqlDatabase>
-#include <QSqlQuery>
-#include <QSqlError>
-#include <QSqlDriver>
 
 Database::Database()
 {
-    //Connect Database
-    Databaseconect();
+//  database();
 }
 
 
-//////////////////////////////////////////////////////////////////////////////////////////
-////Connect database
-//////////////////////////////////////////////////////////////////////////////////////////
-void Database::Databaseconect()
+
+////////////////////////////////////////////////////////////////////////////////////////
+//Connect Database
+////////////////////////////////////////////////////////////////////////////////////////
+void Database::database()
 {
     const QString DRIVER("QSQLITE");
 
@@ -24,10 +19,7 @@ void Database::Databaseconect()
     {
         QSqlDatabase db = QSqlDatabase::addDatabase(DRIVER);
 
-        //Ryuu's database path
-        db.setDatabaseName("/Users/Ryuuuu/QtProjects/Covid19RegistrationSystem2/database.db");
-
-
+        db.setDatabaseName("/Users/Ryuuuu/QtProjects/Covid19RegistrationSystem2/database2.db");
 
         if(!db.open()){
             qWarning() << "MainWindow::DatabaseConnect - ERROR: " << db.lastError().text();
@@ -38,3 +30,5 @@ void Database::Databaseconect()
     else
         qWarning() << "MainWindow::DatabaseConnect - ERROR: no driver " << DRIVER << "available";
 }
+
+
