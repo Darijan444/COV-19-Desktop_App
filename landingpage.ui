@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>607</width>
-    <height>357</height>
+    <width>628</width>
+    <height>364</height>
    </rect>
   </property>
   <property name="font">
@@ -18,14 +18,17 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(104, 161, 229);</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>10</y>
-      <width>201</width>
-      <height>31</height>
+      <y>0</y>
+      <width>331</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -44,6 +47,9 @@
       <height>181</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
+    </property>
     <property name="title">
      <string/>
     </property>
@@ -52,8 +58,8 @@
       <rect>
        <x>10</x>
        <y>20</y>
-       <width>101</width>
-       <height>16</height>
+       <width>121</width>
+       <height>21</height>
       </rect>
      </property>
      <property name="text">
@@ -72,6 +78,29 @@
      <property name="toolTip">
       <string>ToolTip</string>
      </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+
+    background-color: rgb(242, 189, 76); 
+
+    border: none; 
+
+    color: rgb(0, 0, 0); 
+
+    font: 16px;
+
+} 
+
+QPushButton:hover { 
+
+    background-color: rgb(245, 149, 66); 
+
+    border: none; 
+
+    color: rgb(0, 43, 255); 
+
+}</string>
+     </property>
      <property name="text">
       <string>Signup</string>
      </property>
@@ -84,6 +113,29 @@
        <width>100</width>
        <height>32</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+
+    background-color: rgb(242, 189, 76); 
+
+    border: none; 
+
+    color: rgb(0, 0, 0); 
+
+    font: 16px;
+
+} 
+
+QPushButton:hover { 
+
+    background-color: rgb(245, 149, 66); 
+
+    border: none; 
+
+    color: rgb(0, 43, 255); 
+
+}</string>
      </property>
      <property name="text">
       <string>Login</string>
@@ -122,8 +174,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>607</width>
-     <height>22</height>
+     <width>628</width>
+     <height>26</height>
     </rect>
    </property>
   </widget>

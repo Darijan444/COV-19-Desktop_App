@@ -13,13 +13,16 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(104, 161, 229);</string>
+  </property>
   <widget class="QLabel" name="label_6">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>20</x>
      <y>10</y>
-     <width>201</width>
-     <height>31</height>
+     <width>331</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -34,7 +37,7 @@
     <rect>
      <x>30</x>
      <y>140</y>
-     <width>201</width>
+     <width>291</width>
      <height>31</height>
     </rect>
    </property>
@@ -53,6 +56,9 @@
      <width>481</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(242, 248, 253)</string>
    </property>
    <property name="title">
     <string/>
@@ -114,11 +120,14 @@ QPushButton:hover {
   <widget class="QGroupBox" name="groupBox_6">
    <property name="geometry">
     <rect>
-     <x>570</x>
+     <x>530</x>
      <y>10</y>
-     <width>131</width>
-     <height>41</height>
+     <width>181</width>
+     <height>61</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(242, 248, 253)</string>
    </property>
    <property name="title">
     <string/>
@@ -127,9 +136,9 @@ QPushButton:hover {
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>0</y>
-      <width>91</width>
-      <height>16</height>
+      <y>10</y>
+      <width>121</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="font">
@@ -163,8 +172,8 @@ QPushButton:hover {
    <widget class="QPushButton" name="pushButtonViewProfile">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>20</y>
+      <x>60</x>
+      <y>40</y>
       <width>71</width>
       <height>16</height>
      </rect>
@@ -197,6 +206,29 @@ QPushButton:hover {
      <height>32</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+
+    background-color: rgb(242, 189, 76); 
+
+    border: none; 
+
+    color: rgb(0, 0, 0); 
+
+    font: 16px;
+
+} 
+
+QPushButton:hover { 
+
+    background-color: rgb(245, 149, 66); 
+
+    border: none; 
+
+    color: rgb(0, 43, 255); 
+
+}</string>
+   </property>
    <property name="text">
     <string>Log out</string>
    </property>
@@ -209,6 +241,9 @@ QPushButton:hover {
      <width>711</width>
      <height>511</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(242, 248, 253)</string>
    </property>
    <property name="title">
     <string/>
@@ -333,7 +368,7 @@ QPushButton:hover {
         <widget class="QDateEdit" name="dateEdit">
          <property name="dateTime">
           <datetime>
-           <hour>22</hour>
+           <hour>9</hour>
            <minute>0</minute>
            <second>0</second>
            <year>2021</year>
@@ -352,7 +387,7 @@ QPushButton:hover {
            <second>0</second>
            <year>2021</year>
            <month>12</month>
-           <day>29</day>
+           <day>28</day>
           </datetime>
          </property>
          <property name="time">
@@ -369,44 +404,77 @@ QPushButton:hover {
     </layout>
    </widget>
   </widget>
-  <widget class="QWidget" name="layoutWidget">
+  <widget class="QPushButton" name="pushButtonBack">
    <property name="geometry">
     <rect>
-     <x>210</x>
-     <y>720</y>
-     <width>421</width>
-     <height>32</height>
+     <x>211</x>
+     <y>721</y>
+     <width>93</width>
+     <height>29</height>
     </rect>
    </property>
-   <layout class="QHBoxLayout" name="horizontalLayout_4">
-    <item>
-     <widget class="QPushButton" name="pushButtonBack">
-      <property name="text">
-       <string>Back</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <spacer name="horizontalSpacer_2">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>168</width>
-        <height>20</height>
-       </size>
-      </property>
-     </spacer>
-    </item>
-    <item>
-     <widget class="QPushButton" name="pushButtonSubmit">
-      <property name="text">
-       <string>Submit</string>
-      </property>
-     </widget>
-    </item>
-   </layout>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+
+    background-color: rgb(242, 189, 76); 
+
+    border: none; 
+
+    color: rgb(0, 0, 0); 
+
+    font: 16px;
+
+} 
+
+QPushButton:hover { 
+
+    background-color: rgb(245, 149, 66); 
+
+    border: none; 
+
+    color: rgb(0, 43, 255); 
+
+}</string>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonSubmit">
+   <property name="geometry">
+    <rect>
+     <x>537</x>
+     <y>721</y>
+     <width>93</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+
+    background-color: rgb(242, 189, 76); 
+
+    border: none; 
+
+    color: rgb(0, 0, 0); 
+
+    font: 16px;
+
+} 
+
+QPushButton:hover { 
+
+    background-color: rgb(245, 149, 66); 
+
+    border: none; 
+
+    color: rgb(0, 43, 255); 
+
+}</string>
+   </property>
+   <property name="text">
+    <string>Submit</string>
+   </property>
   </widget>
  </widget>
  <resources/>
