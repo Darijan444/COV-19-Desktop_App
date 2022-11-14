@@ -52,7 +52,7 @@ QPushButton:hover {
     <string>Log out</string>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>12</x>
@@ -217,7 +217,11 @@ background-color: rgb(104, 161, 229);</string>
      </widget>
     </item>
     <item row="1" column="1">
-     <widget class="QTableView" name="tableView"/>
+     <widget class="QTableView" name="tableView">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(242, 248, 253)</string>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>
@@ -274,7 +278,7 @@ background-color: rgb(104, 161, 229);</string>
      <x>12</x>
      <y>12</y>
      <width>379</width>
-     <height>49</height>
+     <height>32</height>
     </rect>
    </property>
    <property name="orientation">
