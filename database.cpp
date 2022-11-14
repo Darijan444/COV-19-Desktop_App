@@ -19,7 +19,11 @@ void Database::database()
     {
         QSqlDatabase db = QSqlDatabase::addDatabase(DRIVER);
 
-        db.setDatabaseName("/Users/Ryuuuu/QtProjects/Covid19RegistrationSystem2/database2.db");
+        //db.setDatabaseName("/Users/Ryuuuu/QtProjects/Covid19RegistrationSystem2/database2.db");
+
+        db.setDatabaseName("C:/Users/darij/OneDrive/Desktop/COV-19 Project/COV-19-Desktop_App/database2.db");
+
+
 
         if(!db.open()){
             qWarning() << "MainWindow::DatabaseConnect - ERROR: " << db.lastError().text();

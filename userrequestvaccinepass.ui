@@ -7,11 +7,14 @@
     <x>0</x>
     <y>0</y>
     <width>837</width>
-    <height>555</height>
+    <height>616</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(104, 161, 229);</string>
   </property>
   <widget class="QPushButton" name="pushButtonLogout">
    <property name="geometry">
@@ -21,6 +24,29 @@
      <width>100</width>
      <height>32</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+
+    background-color: rgb(242, 189, 76); 
+
+    border: none; 
+
+    color: rgb(0, 0, 0); 
+
+    font: 16px;
+
+} 
+
+QPushButton:hover { 
+
+    background-color: rgb(245, 149, 66); 
+
+    border: none; 
+
+    color: rgb(0, 43, 255); 
+
+}</string>
    </property>
    <property name="text">
     <string>Log out</string>
@@ -34,6 +60,9 @@
      <width>481</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(242, 248, 253)</string>
    </property>
    <property name="title">
     <string/>
@@ -97,7 +126,7 @@ QPushButton:hover {
     <rect>
      <x>40</x>
      <y>140</y>
-     <width>201</width>
+     <width>341</width>
      <height>31</height>
     </rect>
    </property>
@@ -113,8 +142,8 @@ QPushButton:hover {
     <rect>
      <x>10</x>
      <y>10</y>
-     <width>201</width>
-     <height>31</height>
+     <width>331</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -127,11 +156,14 @@ QPushButton:hover {
   <widget class="QGroupBox" name="groupBox_6">
    <property name="geometry">
     <rect>
-     <x>580</x>
+     <x>500</x>
      <y>10</y>
-     <width>131</width>
-     <height>41</height>
+     <width>211</width>
+     <height>51</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(242, 248, 253)</string>
    </property>
    <property name="title">
     <string/>
@@ -139,10 +171,10 @@ QPushButton:hover {
    <widget class="QLabel" name="labelUserName">
     <property name="geometry">
      <rect>
-      <x>50</x>
+      <x>70</x>
       <y>0</y>
-      <width>91</width>
-      <height>16</height>
+      <width>131</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="font">
@@ -176,8 +208,8 @@ QPushButton:hover {
    <widget class="QPushButton" name="pushButtonViewProfile">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>20</y>
+      <x>90</x>
+      <y>30</y>
       <width>71</width>
       <height>16</height>
      </rect>
@@ -206,14 +238,34 @@ QPushButton:hover {
     <rect>
      <x>140</x>
      <y>190</y>
-     <width>491</width>
-     <height>346</height>
+     <width>510</width>
+     <height>372</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(242, 248, 253)</string>
    </property>
    <property name="title">
     <string/>
    </property>
    <layout class="QGridLayout" name="gridLayout">
+    <item row="5" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_2"/>
+    </item>
+    <item row="4" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout_7">
+      <item>
+       <widget class="QLabel" name="label_12">
+        <property name="text">
+         <string>Email</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditEmail"/>
+      </item>
+     </layout>
+    </item>
     <item row="1" column="0">
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
@@ -299,51 +351,6 @@ QPushButton:hover {
       </item>
      </layout>
     </item>
-    <item row="4" column="0">
-     <layout class="QVBoxLayout" name="verticalLayout_7">
-      <item>
-       <widget class="QLabel" name="label_12">
-        <property name="text">
-         <string>Email</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLineEdit" name="lineEditEmail"/>
-      </item>
-     </layout>
-    </item>
-    <item row="5" column="0">
-     <layout class="QHBoxLayout" name="horizontalLayout_2">
-      <item>
-       <widget class="QPushButton" name="pushButtonBack">
-        <property name="text">
-         <string>Back</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <spacer name="horizontalSpacer">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>208</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButtonRequest">
-        <property name="text">
-         <string>Request</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
     <item row="0" column="0">
      <widget class="QLabel" name="label">
       <property name="styleSheet">
@@ -355,6 +362,78 @@ QPushButton:hover {
      </widget>
     </item>
    </layout>
+  </widget>
+  <widget class="QPushButton" name="pushButtonRequest">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>570</y>
+     <width>93</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+
+    background-color: rgb(242, 189, 76); 
+
+    border: none; 
+
+    color: rgb(0, 0, 0); 
+
+    font: 16px;
+
+} 
+
+QPushButton:hover { 
+
+    background-color: rgb(245, 149, 66); 
+
+    border: none; 
+
+    color: rgb(0, 43, 255); 
+
+}</string>
+   </property>
+   <property name="text">
+    <string>Request</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonBack">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>570</y>
+     <width>93</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+
+    background-color: rgb(242, 189, 76); 
+
+    border: none; 
+
+    color: rgb(0, 0, 0); 
+
+    font: 16px;
+
+} 
+
+QPushButton:hover { 
+
+    background-color: rgb(245, 149, 66); 
+
+    border: none; 
+
+    color: rgb(0, 43, 255); 
+
+}</string>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
   </widget>
  </widget>
  <resources/>

@@ -13,13 +13,16 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(104, 161, 229);</string>
+  </property>
   <widget class="QLabel" name="label_7">
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>140</y>
-     <width>201</width>
-     <height>31</height>
+     <y>130</y>
+     <width>361</width>
+     <height>41</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -33,10 +36,13 @@
    <property name="geometry">
     <rect>
      <x>70</x>
-     <y>210</y>
+     <y>240</y>
      <width>401</width>
-     <height>51</height>
+     <height>61</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(242, 248, 253)</string>
    </property>
    <property name="title">
     <string/>
@@ -57,10 +63,10 @@
    <widget class="QLabel" name="labelTestKitName2">
     <property name="geometry">
      <rect>
-      <x>79</x>
-      <y>2</y>
+      <x>80</x>
+      <y>0</y>
       <width>97</width>
-      <height>19</height>
+      <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -73,8 +79,8 @@
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>79</x>
-      <y>29</y>
+      <x>80</x>
+      <y>40</y>
       <width>33</width>
       <height>16</height>
      </rect>
@@ -114,7 +120,7 @@
    <property name="geometry">
     <rect>
      <x>70</x>
-     <y>180</y>
+     <y>190</y>
      <width>201</width>
      <height>31</height>
     </rect>
@@ -130,10 +136,13 @@
    <property name="geometry">
     <rect>
      <x>70</x>
-     <y>280</y>
+     <y>310</y>
      <width>401</width>
-     <height>51</height>
+     <height>61</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(242, 248, 253)</string>
    </property>
    <property name="title">
     <string/>
@@ -154,10 +163,10 @@
    <widget class="QLabel" name="labelTestKitName1">
     <property name="geometry">
      <rect>
-      <x>79</x>
-      <y>2</y>
+      <x>80</x>
+      <y>0</y>
       <width>97</width>
-      <height>19</height>
+      <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -170,8 +179,8 @@
    <widget class="QLabel" name="label_14">
     <property name="geometry">
      <rect>
-      <x>79</x>
-      <y>29</y>
+      <x>80</x>
+      <y>40</y>
       <width>33</width>
       <height>16</height>
      </rect>
@@ -215,6 +224,9 @@
      <width>481</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(242, 248, 253)</string>
    </property>
    <property name="title">
     <string/>
@@ -282,6 +294,29 @@ QPushButton:hover {
      <height>32</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+
+    background-color: rgb(242, 189, 76); 
+
+    border: none; 
+
+    color: rgb(0, 0, 0); 
+
+    font: 16px;
+
+} 
+
+QPushButton:hover { 
+
+    background-color: rgb(245, 149, 66); 
+
+    border: none; 
+
+    color: rgb(0, 43, 255); 
+
+}</string>
+   </property>
    <property name="text">
     <string>Log out</string>
    </property>
@@ -291,8 +326,8 @@ QPushButton:hover {
     <rect>
      <x>10</x>
      <y>10</y>
-     <width>201</width>
-     <height>31</height>
+     <width>341</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -305,11 +340,14 @@ QPushButton:hover {
   <widget class="QGroupBox" name="groupBox_6">
    <property name="geometry">
     <rect>
-     <x>580</x>
+     <x>530</x>
      <y>10</y>
-     <width>131</width>
-     <height>41</height>
+     <width>191</width>
+     <height>61</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(242, 248, 253)</string>
    </property>
    <property name="title">
     <string/>
@@ -317,10 +355,10 @@ QPushButton:hover {
    <widget class="QLabel" name="labelUserName">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>0</y>
-      <width>91</width>
-      <height>16</height>
+      <x>60</x>
+      <y>10</y>
+      <width>121</width>
+      <height>21</height>
      </rect>
     </property>
     <property name="font">
@@ -354,8 +392,8 @@ QPushButton:hover {
    <widget class="QPushButton" name="pushButtonViewProfile">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>20</y>
+      <x>70</x>
+      <y>40</y>
       <width>71</width>
       <height>16</height>
      </rect>
