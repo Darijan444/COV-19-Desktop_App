@@ -26,7 +26,8 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 24pt &quot;.AppleSystemUIFont&quot;;</string>
+    <string notr="true">font: 24pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(104, 161, 229);</string>
    </property>
    <property name="text">
     <string>My health account </string>
@@ -65,7 +66,8 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;</string>
+     <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(242, 248, 253)</string>
     </property>
     <property name="text">
      <string>User Name</string>
@@ -79,6 +81,9 @@
       <width>41</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
     </property>
     <property name="text">
      <string>Icon</string>
@@ -184,7 +189,8 @@ QPushButton:hover {
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;</string>
+        <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(242, 248, 253)</string>
        </property>
        <property name="text">
         <string> Covid-19 Test Result</string>
@@ -208,7 +214,8 @@ QPushButton:hover {
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 12pt &quot;.AppleSystemUIFont&quot;;</string>
+        <string notr="true">font: 12pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(242, 248, 253)</string>
        </property>
        <property name="text">
         <string>View your Covid-19 test results.</string>
@@ -222,6 +229,9 @@ QPushButton:hover {
          <width>31</width>
          <height>31</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(242, 248, 253)</string>
        </property>
        <property name="text">
         <string>Icon</string>
@@ -291,7 +301,8 @@ QPushButton:hover {
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;</string>
+        <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(242, 248, 253)</string>
        </property>
        <property name="text">
         <string> Vaccine Pass</string>
@@ -315,7 +326,8 @@ QPushButton:hover {
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 12pt &quot;.AppleSystemUIFont&quot;;</string>
+        <string notr="true">font: 12pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(242, 248, 253)</string>
        </property>
        <property name="text">
         <string>Request your Vaccine Pass.</string>
@@ -329,6 +341,9 @@ QPushButton:hover {
          <width>31</width>
          <height>31</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(242, 248, 253)</string>
        </property>
        <property name="text">
         <string>Icon</string>
@@ -398,7 +413,8 @@ QPushButton:hover {
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;</string>
+        <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(242, 248, 253)</string>
        </property>
        <property name="text">
         <string> RAT Result</string>
@@ -422,7 +438,8 @@ QPushButton:hover {
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 12pt &quot;.AppleSystemUIFont&quot;;</string>
+        <string notr="true">font: 12pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(242, 248, 253)</string>
        </property>
        <property name="text">
         <string>Report your RAT Results.</string>
@@ -436,6 +453,9 @@ QPushButton:hover {
          <width>31</width>
          <height>31</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(242, 248, 253)</string>
        </property>
        <property name="text">
         <string>Icon</string>
@@ -505,7 +525,8 @@ QPushButton:hover {
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;</string>
+        <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(242, 248, 253)</string>
        </property>
        <property name="text">
         <string> Vaccination Record</string>
@@ -529,7 +550,8 @@ QPushButton:hover {
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 12pt &quot;.AppleSystemUIFont&quot;;</string>
+        <string notr="true">font: 12pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(242, 248, 253)</string>
        </property>
        <property name="text">
         <string>View your Vaccination records.</string>
@@ -543,6 +565,9 @@ QPushButton:hover {
          <width>31</width>
          <height>31</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(242, 248, 253)</string>
        </property>
        <property name="text">
         <string>Icon</string>
@@ -612,7 +637,8 @@ QPushButton:hover {
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;</string>
+        <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(242, 248, 253)</string>
        </property>
        <property name="text">
         <string> Report Issue</string>
@@ -636,7 +662,8 @@ QPushButton:hover {
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 12pt &quot;.AppleSystemUIFont&quot;;</string>
+        <string notr="true">font: 12pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(242, 248, 253)</string>
        </property>
        <property name="text">
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Report any issues you may &lt;/p&gt;&lt;p&gt;encounter. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -650,6 +677,9 @@ QPushButton:hover {
          <width>31</width>
          <height>31</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(242, 248, 253)</string>
        </property>
        <property name="text">
         <string>Icon</string>

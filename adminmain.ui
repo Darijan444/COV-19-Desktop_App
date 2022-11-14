@@ -13,94 +13,9 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QWidget" name="layoutWidget">
-   <property name="geometry">
-    <rect>
-     <x>12</x>
-     <y>12</y>
-     <width>681</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <layout class="QHBoxLayout" name="horizontalLayout_3">
-    <item>
-     <widget class="QPushButton" name="pushButtonMyHealthAccount">
-      <property name="styleSheet">
-       <string notr="true">QPushButton {
-	background-color: rgb(0, 0, 0,0.1); 
-	border: none; 
-	color: rgb(0, 0, 0); 
-	font: 24px;
-	text-align: left;
-} 
-
-</string>
-      </property>
-      <property name="text">
-       <string>My health account </string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <spacer name="horizontalSpacer">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>188</width>
-        <height>20</height>
-       </size>
-      </property>
-     </spacer>
-    </item>
-    <item>
-     <widget class="QGroupBox" name="groupBox_6">
-      <property name="title">
-       <string/>
-      </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_2">
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout">
-         <item>
-          <widget class="QLabel" name="labelAdmin">
-           <property name="text">
-            <string>Icon</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_17">
-           <property name="font">
-            <font>
-             <family>.AppleSystemUIFont</family>
-             <pointsize>14</pointsize>
-             <italic>false</italic>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;</string>
-           </property>
-           <property name="text">
-            <string>Admin</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-      </layout>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="pushButtonLogout">
-      <property name="text">
-       <string>Log out</string>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(104, 161, 229);</string>
+  </property>
   <widget class="QWidget" name="gridLayoutWidget">
    <property name="geometry">
     <rect>
@@ -120,6 +35,9 @@
      <width>120</width>
      <height>271</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(242, 248, 253)</string>
    </property>
    <property name="title">
     <string/>
@@ -262,17 +180,122 @@ QPushButton:hover {
    <property name="geometry">
     <rect>
      <x>149</x>
-     <y>84</y>
-     <width>77</width>
-     <height>19</height>
+     <y>82</y>
+     <width>141</width>
+     <height>21</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 16pt &quot;.AppleSystemUIFont&quot;;</string>
+    <string notr="true">font: 16pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(104, 161, 229);</string>
    </property>
    <property name="text">
     <string>Dashboard</string>
    </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonLogout">
+   <property name="geometry">
+    <rect>
+     <x>599</x>
+     <y>28</y>
+     <width>93</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+
+    background-color: rgb(242, 189, 76); 
+
+    border: none; 
+
+    color: rgb(0, 0, 0); 
+
+    font: 16px;
+
+} 
+
+QPushButton:hover { 
+
+    background-color: rgb(245, 149, 66); 
+
+    border: none; 
+
+    color: rgb(0, 43, 255); 
+
+}</string>
+   </property>
+   <property name="text">
+    <string>Log out</string>
+   </property>
+  </widget>
+  <widget class="QSplitter" name="splitter">
+   <property name="geometry">
+    <rect>
+     <x>13</x>
+     <y>13</y>
+     <width>571</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <widget class="QPushButton" name="pushButtonMyHealthAccount">
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: rgb(0, 0, 0,0.1); 
+	border: none; 
+	color: rgb(0, 0, 0); 
+	font: 24px;
+	text-align: left;
+} 
+
+</string>
+    </property>
+    <property name="text">
+     <string>My health account </string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_6">
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="labelAdmin">
+         <property name="text">
+          <string>Icon</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_17">
+         <property name="font">
+          <font>
+           <family>.AppleSystemUIFont</family>
+           <pointsize>14</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Admin</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
   </widget>
  </widget>
  <resources/>

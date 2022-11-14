@@ -26,7 +26,8 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
+    <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(104, 161, 229);</string>
    </property>
    <property name="text">
     <string> View Covid-19 Test Result</string>
@@ -56,6 +57,9 @@
       <height>41</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
+    </property>
     <property name="text">
      <string>icon</string>
     </property>
@@ -70,7 +74,8 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 16pt &quot;.AppleSystemUIFont&quot;;</string>
+     <string notr="true">font: 16pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(242, 248, 253)</string>
     </property>
     <property name="text">
      <string>Test Kit Name</string>
@@ -85,6 +90,9 @@
       <height>16</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
+    </property>
     <property name="text">
      <string>Test2</string>
     </property>
@@ -98,6 +106,9 @@
       <height>16</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
+    </property>
     <property name="text">
      <string>Date</string>
     </property>
@@ -110,6 +121,9 @@
       <width>101</width>
       <height>16</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
     </property>
     <property name="text">
      <string>Result</string>
@@ -126,7 +140,8 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 16pt &quot;.AppleSystemUIFont&quot;;</string>
+    <string notr="true">font: 16pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(104, 161, 229);</string>
    </property>
    <property name="text">
     <string>RAT Result</string>
@@ -156,6 +171,9 @@
       <height>41</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
+    </property>
     <property name="text">
      <string>icon</string>
     </property>
@@ -170,7 +188,8 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 16pt &quot;.AppleSystemUIFont&quot;;</string>
+     <string notr="true">font: 16pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(242, 248, 253)</string>
     </property>
     <property name="text">
      <string>Test Kit Name</string>
@@ -185,6 +204,9 @@
       <height>16</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
+    </property>
     <property name="text">
      <string>Test1</string>
     </property>
@@ -198,6 +220,9 @@
       <height>16</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
+    </property>
     <property name="text">
      <string>Date</string>
     </property>
@@ -210,6 +235,9 @@
       <width>101</width>
       <height>16</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
     </property>
     <property name="text">
      <string>Result</string>
@@ -252,6 +280,9 @@
       <width>241</width>
       <height>16</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
     </property>
     <property name="text">
      <string> View Covid-19 Test Result</string>
@@ -331,7 +362,8 @@ QPushButton:hover {
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 24pt &quot;.AppleSystemUIFont&quot;;</string>
+    <string notr="true">font: 24pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(104, 161, 229);</string>
    </property>
    <property name="text">
     <string>My health account </string>
@@ -370,7 +402,8 @@ QPushButton:hover {
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;</string>
+     <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(242, 248, 253)</string>
     </property>
     <property name="text">
      <string>User Name</string>
@@ -384,6 +417,9 @@ QPushButton:hover {
       <width>41</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
     </property>
     <property name="text">
      <string>Icon</string>

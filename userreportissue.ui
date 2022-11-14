@@ -26,7 +26,8 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 24pt &quot;.AppleSystemUIFont&quot;;</string>
+    <string notr="true">font: 24pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(104, 161, 229);</string>
    </property>
    <property name="text">
     <string>My health account </string>
@@ -65,7 +66,8 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;</string>
+     <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(242, 248, 253)</string>
     </property>
     <property name="text">
      <string>User Name</string>
@@ -79,6 +81,9 @@
       <width>41</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
     </property>
     <property name="text">
      <string>Icon</string>
@@ -167,7 +172,8 @@ QPushButton:hover {
     <item>
      <widget class="QLabel" name="label">
       <property name="styleSheet">
-       <string notr="true">font: 16pt &quot;.AppleSystemUIFont&quot;;</string>
+       <string notr="true">font: 16pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(242, 248, 253)</string>
       </property>
       <property name="text">
        <string>Please fill out all forms</string>
@@ -178,13 +184,20 @@ QPushButton:hover {
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
        <widget class="QLabel" name="label_2">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(242, 248, 253)</string>
+        </property>
         <property name="text">
          <string>First Name</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="lineEditFirstName"/>
+       <widget class="QLineEdit" name="lineEditFirstName">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(242, 248, 253)</string>
+        </property>
+       </widget>
       </item>
      </layout>
     </item>
@@ -192,13 +205,20 @@ QPushButton:hover {
      <layout class="QVBoxLayout" name="verticalLayout_2">
       <item>
        <widget class="QLabel" name="label_3">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(242, 248, 253)</string>
+        </property>
         <property name="text">
          <string>Last Name</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="lineEditLastName"/>
+       <widget class="QLineEdit" name="lineEditLastName">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(242, 248, 253)</string>
+        </property>
+       </widget>
       </item>
      </layout>
     </item>
@@ -206,13 +226,20 @@ QPushButton:hover {
      <layout class="QVBoxLayout" name="verticalLayout_3">
       <item>
        <widget class="QLabel" name="label_5">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(242, 248, 253)</string>
+        </property>
         <property name="text">
          <string>Email</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="lineEditEmail"/>
+       <widget class="QLineEdit" name="lineEditEmail">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(242, 248, 253)</string>
+        </property>
+       </widget>
       </item>
      </layout>
     </item>
@@ -220,13 +247,20 @@ QPushButton:hover {
      <layout class="QVBoxLayout" name="verticalLayout_4">
       <item>
        <widget class="QLabel" name="label_12">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(242, 248, 253)</string>
+        </property>
         <property name="text">
          <string>Write message</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QTextEdit" name="textEditMessage"/>
+       <widget class="QTextEdit" name="textEditMessage">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(242, 248, 253)</string>
+        </property>
+       </widget>
       </item>
      </layout>
     </item>
@@ -245,7 +279,8 @@ QPushButton:hover {
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
+    <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(104, 161, 229);</string>
    </property>
    <property name="text">
     <string> Report Issue</string>
@@ -287,6 +322,9 @@ QPushButton:hover {
       <width>241</width>
       <height>16</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
     </property>
     <property name="text">
      <string> Report Issue</string>
