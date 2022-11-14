@@ -53,6 +53,9 @@
       <height>16</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
+    </property>
     <property name="text">
      <string> View Vaccination Record</string>
     </property>
@@ -109,6 +112,9 @@ QPushButton:hover {
       <height>41</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
+    </property>
     <property name="text">
      <string>icon</string>
     </property>
@@ -123,7 +129,8 @@ QPushButton:hover {
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 16pt &quot;.AppleSystemUIFont&quot;;</string>
+     <string notr="true">font: 16pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(242, 248, 253)</string>
     </property>
     <property name="text">
      <string>Vaccine Name</string>
@@ -138,6 +145,9 @@ QPushButton:hover {
       <height>16</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
+    </property>
     <property name="text">
      <string>Dose1</string>
     </property>
@@ -150,6 +160,9 @@ QPushButton:hover {
       <width>91</width>
       <height>16</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
     </property>
     <property name="text">
      <string>Date</string>
@@ -166,7 +179,8 @@ QPushButton:hover {
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 16pt &quot;.AppleSystemUIFont&quot;;</string>
+    <string notr="true">font: 16pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(104, 161, 229);</string>
    </property>
    <property name="text">
     <string>Covid-19 Vaccinations</string>
@@ -218,7 +232,8 @@ QPushButton:hover {
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
+    <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(104, 161, 229);</string>
    </property>
    <property name="text">
     <string> View Vaccination Record</string>
@@ -257,7 +272,8 @@ QPushButton:hover {
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;</string>
+     <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(242, 248, 253)</string>
     </property>
     <property name="text">
      <string>User Name</string>
@@ -271,6 +287,9 @@ QPushButton:hover {
       <width>41</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
     </property>
     <property name="text">
      <string>Icon</string>
@@ -314,7 +333,8 @@ QPushButton:hover {
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 24pt &quot;.AppleSystemUIFont&quot;;</string>
+    <string notr="true">font: 24pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(104, 161, 229);</string>
    </property>
    <property name="text">
     <string>My health account </string>
@@ -344,6 +364,9 @@ QPushButton:hover {
       <height>41</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
+    </property>
     <property name="text">
      <string>icon</string>
     </property>
@@ -358,7 +381,8 @@ QPushButton:hover {
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 16pt &quot;.AppleSystemUIFont&quot;;</string>
+     <string notr="true">font: 16pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(242, 248, 253)</string>
     </property>
     <property name="text">
      <string>Vaccine Name</string>
@@ -373,6 +397,9 @@ QPushButton:hover {
       <height>16</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
+    </property>
     <property name="text">
      <string>Dose2</string>
     </property>
@@ -385,6 +412,9 @@ QPushButton:hover {
       <width>91</width>
       <height>16</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
     </property>
     <property name="text">
      <string>Date</string>
@@ -415,6 +445,9 @@ QPushButton:hover {
       <height>16</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
+    </property>
     <property name="text">
      <string>Manufacturer</string>
     </property>
@@ -427,6 +460,9 @@ QPushButton:hover {
       <width>101</width>
       <height>16</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
     </property>
     <property name="text">
      <string>Batch Number</string>
@@ -441,6 +477,9 @@ QPushButton:hover {
       <height>16</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
+    </property>
     <property name="text">
      <string>TextLabel</string>
     </property>
@@ -453,6 +492,9 @@ QPushButton:hover {
       <width>111</width>
       <height>16</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
     </property>
     <property name="text">
      <string>TextLabel</string>
@@ -483,6 +525,9 @@ QPushButton:hover {
       <height>16</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
+    </property>
     <property name="text">
      <string>Manufacturer</string>
     </property>
@@ -495,6 +540,9 @@ QPushButton:hover {
       <width>101</width>
       <height>16</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
     </property>
     <property name="text">
      <string>Batch Number</string>
@@ -509,6 +557,9 @@ QPushButton:hover {
       <height>16</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
+    </property>
     <property name="text">
      <string>TextLabel</string>
     </property>
@@ -521,6 +572,9 @@ QPushButton:hover {
       <width>111</width>
       <height>16</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
     </property>
     <property name="text">
      <string>TextLabel</string>

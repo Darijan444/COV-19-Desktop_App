@@ -32,7 +32,8 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 24pt &quot;.AppleSystemUIFont&quot;;</string>
+     <string notr="true">font: 24pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(104, 161, 229);</string>
     </property>
     <property name="text">
      <string>My health account </string>
@@ -61,6 +62,9 @@
        <width>121</width>
        <height>21</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(242, 248, 253)</string>
      </property>
      <property name="text">
       <string>Login or Signup </string>
@@ -125,6 +129,10 @@ QPushButton:hover {
 
     font: 16px;
 
+border-radius: 55px;
+
+
+
 } 
 
 QPushButton:hover { 
@@ -134,8 +142,9 @@ QPushButton:hover {
     border: none; 
 
     color: rgb(0, 43, 255); 
+}
 
-}</string>
+  </string>
      </property>
      <property name="text">
       <string>Login</string>
@@ -150,6 +159,9 @@ QPushButton:hover {
        <height>16</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(242, 248, 253)</string>
+     </property>
      <property name="text">
       <string>or</string>
      </property>
@@ -163,6 +175,9 @@ QPushButton:hover {
       <width>101</width>
       <height>16</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(104, 161, 229);</string>
     </property>
     <property name="text">
      <string>External Link</string>

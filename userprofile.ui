@@ -53,6 +53,9 @@
       <height>16</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
+    </property>
     <property name="text">
      <string>Profile</string>
     </property>
@@ -95,7 +98,8 @@ QPushButton:hover {
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
+    <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(104, 161, 229);</string>
    </property>
    <property name="text">
     <string>Profile</string>
@@ -130,6 +134,9 @@ QPushButton:hover {
       <bold>true</bold>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
+    </property>
     <property name="text">
      <string>NHI Number</string>
     </property>
@@ -146,6 +153,9 @@ QPushButton:hover {
       <height>251</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
+    </property>
     <property name="text">
      <string>QR Code</string>
     </property>
@@ -161,6 +171,9 @@ QPushButton:hover {
       <width>111</width>
       <height>16</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
     </property>
     <property name="text">
      <string>**********</string>
@@ -188,6 +201,9 @@ QPushButton:hover {
            <bold>true</bold>
           </font>
          </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(242, 248, 253)</string>
+         </property>
          <property name="text">
           <string>Name</string>
          </property>
@@ -197,6 +213,9 @@ QPushButton:hover {
         <layout class="QHBoxLayout" name="horizontalLayout">
          <item>
           <widget class="QLabel" name="labelName">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(242, 248, 253)</string>
+           </property>
            <property name="text">
             <string>TextLabel</string>
            </property>
@@ -215,6 +234,9 @@ QPushButton:hover {
            <bold>true</bold>
           </font>
          </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(242, 248, 253)</string>
+         </property>
          <property name="text">
           <string>Email Address</string>
          </property>
@@ -222,6 +244,9 @@ QPushButton:hover {
        </item>
        <item>
         <widget class="QLabel" name="labelEmail">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(242, 248, 253)</string>
+         </property>
          <property name="text">
           <string>TextLabel</string>
          </property>
@@ -238,6 +263,9 @@ QPushButton:hover {
            <bold>true</bold>
           </font>
          </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(242, 248, 253)</string>
+         </property>
          <property name="text">
           <string>Data of Birth</string>
          </property>
@@ -245,6 +273,9 @@ QPushButton:hover {
        </item>
        <item>
         <widget class="QLabel" name="labelDateOfBirth">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(242, 248, 253)</string>
+         </property>
          <property name="text">
           <string>TextLabel</string>
          </property>
@@ -261,6 +292,9 @@ QPushButton:hover {
            <bold>true</bold>
           </font>
          </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(242, 248, 253)</string>
+         </property>
          <property name="text">
           <string>Mobile Number</string>
          </property>
@@ -268,6 +302,9 @@ QPushButton:hover {
        </item>
        <item>
         <widget class="QLabel" name="labelMobileNumber">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(242, 248, 253)</string>
+         </property>
          <property name="text">
           <string>TextLabel</string>
          </property>
@@ -347,7 +384,8 @@ QPushButton:hover {
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;</string>
+     <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(242, 248, 253)</string>
     </property>
     <property name="text">
      <string>User Name</string>
@@ -361,6 +399,9 @@ QPushButton:hover {
       <width>41</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
     </property>
     <property name="text">
      <string>Icon</string>
@@ -404,7 +445,8 @@ QPushButton:hover {
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 24pt &quot;.AppleSystemUIFont&quot;;</string>
+    <string notr="true">font: 24pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(104, 161, 229);</string>
    </property>
    <property name="text">
     <string>My health account </string>

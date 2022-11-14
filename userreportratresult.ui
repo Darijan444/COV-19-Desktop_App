@@ -26,7 +26,8 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 24pt &quot;.AppleSystemUIFont&quot;;</string>
+    <string notr="true">font: 24pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(104, 161, 229);</string>
    </property>
    <property name="text">
     <string>My health account </string>
@@ -42,7 +43,8 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
+    <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(104, 161, 229);</string>
    </property>
    <property name="text">
     <string> Report a RAT Result</string>
@@ -84,6 +86,9 @@
       <width>241</width>
       <height>16</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
     </property>
     <property name="text">
      <string> Report a RAT Result</string>
@@ -150,7 +155,8 @@ QPushButton:hover {
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;</string>
+     <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(242, 248, 253)</string>
     </property>
     <property name="text">
      <string>User Name</string>
@@ -164,6 +170,9 @@ QPushButton:hover {
       <width>41</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
     </property>
     <property name="text">
      <string>Icon</string>
@@ -257,6 +266,9 @@ QPushButton:hover {
       <height>251</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
+    </property>
     <property name="text">
      <string>RAT Kit Image</string>
     </property>
@@ -278,6 +290,9 @@ QPushButton:hover {
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
         <widget class="QLabel" name="label">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(242, 248, 253)</string>
+         </property>
          <property name="text">
           <string>Is the control line (C) visible?</string>
          </property>
@@ -285,6 +300,9 @@ QPushButton:hover {
        </item>
        <item>
         <widget class="QLabel" name="label_2">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(242, 248, 253)</string>
+         </property>
          <property name="text">
           <string>Is the test line (T) visible?</string>
          </property>
@@ -305,6 +323,9 @@ QPushButton:hover {
        </item>
        <item>
         <widget class="QLabel" name="label_4">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(242, 248, 253)</string>
+         </property>
          <property name="text">
           <string>Day test was taken (Day/Month/Year)</string>
          </property>
@@ -312,6 +333,9 @@ QPushButton:hover {
        </item>
        <item>
         <widget class="QLabel" name="label_5">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(242, 248, 253)</string>
+         </property>
          <property name="text">
           <string>Time test was taken</string>
          </property>
@@ -325,6 +349,9 @@ QPushButton:hover {
         <layout class="QHBoxLayout" name="horizontalLayout">
          <item>
           <widget class="QCheckBox" name="checkBoxCYes">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(242, 248, 253)</string>
+           </property>
            <property name="text">
             <string>Yes</string>
            </property>
@@ -332,6 +359,9 @@ QPushButton:hover {
          </item>
          <item>
           <widget class="QCheckBox" name="checkBoxCNo">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(242, 248, 253)</string>
+           </property>
            <property name="text">
             <string>No</string>
            </property>
@@ -343,6 +373,9 @@ QPushButton:hover {
         <layout class="QHBoxLayout" name="horizontalLayout_2">
          <item>
           <widget class="QCheckBox" name="checkBoxTYes">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(242, 248, 253)</string>
+           </property>
            <property name="text">
             <string>Yes</string>
            </property>
@@ -350,6 +383,9 @@ QPushButton:hover {
          </item>
          <item>
           <widget class="QCheckBox" name="checkBoxTNo">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(242, 248, 253)</string>
+           </property>
            <property name="text">
             <string>No</string>
            </property>
@@ -359,6 +395,9 @@ QPushButton:hover {
        </item>
        <item>
         <widget class="QLabel" name="labelLink">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(242, 248, 253)</string>
+         </property>
          <property name="text">
           <string>Link</string>
          </property>
@@ -366,20 +405,26 @@ QPushButton:hover {
        </item>
        <item>
         <widget class="QDateEdit" name="dateEdit">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(242, 248, 253)</string>
+         </property>
          <property name="dateTime">
           <datetime>
-           <hour>9</hour>
+           <hour>20</hour>
            <minute>0</minute>
            <second>0</second>
            <year>2021</year>
            <month>12</month>
-           <day>31</day>
+           <day>30</day>
           </datetime>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QTimeEdit" name="timeEdit">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(242, 248, 253)</string>
+         </property>
          <property name="dateTime">
           <datetime>
            <hour>9</hour>
@@ -387,7 +432,7 @@ QPushButton:hover {
            <second>0</second>
            <year>2021</year>
            <month>12</month>
-           <day>28</day>
+           <day>27</day>
           </datetime>
          </property>
          <property name="time">
