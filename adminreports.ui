@@ -16,7 +16,7 @@
   <property name="styleSheet">
    <string notr="true">background-color: rgb(104, 161, 229);</string>
   </property>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>11</x>
@@ -181,7 +181,11 @@ background-color: rgb(104, 161, 229);</string>
      </widget>
     </item>
     <item row="1" column="1">
-     <widget class="QTableView" name="tableView"/>
+     <widget class="QTableView" name="tableView">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(242, 248, 253)</string>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>

@@ -258,13 +258,16 @@ QPushButton:hover {
      <height>241</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(242, 248, 253)</string>
+   </property>
   </widget>
   <widget class="QLabel" name="labelUserList_2">
    <property name="geometry">
     <rect>
      <x>149</x>
      <y>84</y>
-     <width>62</width>
+     <width>111</width>
      <height>19</height>
     </rect>
    </property>
