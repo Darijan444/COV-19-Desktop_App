@@ -3,7 +3,7 @@
 #include "adminusers.h"
 #include "adminreports.h"
 #include "adminlogs.h"
-#include "adminuserdetail.h"
+#include "adminuserdetail3.h"
 #include "ui_adminusers.h"
 
 #include <QSqlQuery>
@@ -61,12 +61,9 @@ AdminUsers::AdminUsers(QWidget *parent) :
 
     //->AdminUserDetail
     connect(ui->pushButtonEdit,&QPushButton::clicked,[=](){
-//        id = ui->spinBoxUserID->value();
-//        id = ui->spinBoxUserID->displayIntegerBase() ;
         num = ui->spinBoxUserID->value();
 
-//        AdminUserDetail * adminuserdetail = new AdminUserDetail(this, id);
-        AdminUserDetail * adminuserdetail = new AdminUserDetail(this, num);
+        AdminUserDetail3 * adminuserdetail = new AdminUserDetail3(this, num);
         this->hide();
         adminuserdetail->show();
     });

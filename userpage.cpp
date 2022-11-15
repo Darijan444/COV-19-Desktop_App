@@ -6,6 +6,7 @@
 #include "userrequestvaccinepass.h"
 #include "userreportratresult.h"
 #include "userreportissue.h"
+#include "uservaccinepass.h"
 #include "ui_userpage.h"
 
 
@@ -67,13 +68,23 @@ UserPage::UserPage(QWidget *parent, QString email) :
     });
 
     //->Vaccination Pass
-    connect(ui->pushButtonVaccinePass,&QPushButton::clicked,[=](){
-        UserRequestVaccinePass * userRequestVaccinePass = new UserRequestVaccinePass(this, email);
-        this->hide();
-        userRequestVaccinePass->show();
-    });
+    if(QRVaccinePass == "---"){
+        connect(ui->pushButtonVaccinePass,&QPushButton::clicked,[=](){
+            UserRequestVaccinePass * userRequestVaccinePass = new UserRequestVaccinePass(this, email);
+            this->hide();
+            userRequestVaccinePass->show();
+        });
+    }else{
+        connect(ui->pushButtonVaccinePass,&QPushButton::clicked,[=](){
+            UserVaccinePass * userVaccinePass = new UserVaccinePass(this, email);
+            this->hide();
+            userVaccinePass->show();
+        });
+    }
 
-    //->Vaccination Pass
+
+
+    //->Report RAT Result
     connect(ui->pushButtonRATResult,&QPushButton::clicked,[=](){
         UserReportRATResult * userReportRATResult = new UserReportRATResult(this, email);
         this->hide();
@@ -119,6 +130,8 @@ void UserPage::getUesrInfo()
         id = query.value(0).toInt();
         firstName = query.value(1).toString();
         lastName = query.value(2).toString();
+
+        QRVaccinePass = query.value(22).toString();
     } else {
         qWarning() << query.lastError();
     }
