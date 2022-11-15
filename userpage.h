@@ -32,6 +32,7 @@ private:
     QString lastName;
     QString email;
 
+    QString QRVaccinePass;
 
 };
 
