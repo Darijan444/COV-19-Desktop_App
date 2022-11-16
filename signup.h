@@ -21,6 +21,12 @@ public:
     void reset();
     void hintText();
 
+    bool isBlankExist();
+    bool isPasswordMatch();
+    bool isEmailValid(QString email);
+    bool isEmailExist(QString email);
+    bool isPasswordValid(QString password);
+
 
 private slots:
 //    void on_pushButtonConfirm_clicked(QString firstName, QString lastName, QString email, QString password);
