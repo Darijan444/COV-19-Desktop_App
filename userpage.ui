@@ -6,24 +6,28 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>835</width>
-    <height>367</height>
+    <width>1048</width>
+    <height>500</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(104, 161, 229);</string>
   </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
      <x>10</x>
      <y>10</y>
-     <width>201</width>
-     <height>31</height>
+     <width>321</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 24pt &quot;.AppleSystemUIFont&quot;;</string>
+    <string notr="true">font: 24pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(104, 161, 229);</string>
    </property>
    <property name="text">
     <string>My health account </string>
@@ -32,11 +36,14 @@
   <widget class="QGroupBox" name="groupBox_6">
    <property name="geometry">
     <rect>
-     <x>580</x>
+     <x>640</x>
      <y>10</y>
-     <width>131</width>
-     <height>41</height>
+     <width>191</width>
+     <height>51</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(242, 248, 253)</string>
    </property>
    <property name="title">
     <string/>
@@ -46,8 +53,8 @@
      <rect>
       <x>50</x>
       <y>0</y>
-      <width>91</width>
-      <height>16</height>
+      <width>131</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="font">
@@ -59,7 +66,8 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;</string>
+     <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(242, 248, 253)</string>
     </property>
     <property name="text">
      <string>User Name</string>
@@ -74,6 +82,9 @@
       <height>41</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
+    </property>
     <property name="text">
      <string>Icon</string>
     </property>
@@ -81,8 +92,8 @@
    <widget class="QPushButton" name="pushButtonViewProfile">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>20</y>
+      <x>60</x>
+      <y>30</y>
       <width>71</width>
       <height>16</height>
      </rect>
@@ -109,11 +120,33 @@ QPushButton:hover {
   <widget class="QPushButton" name="pushButtonLogout">
    <property name="geometry">
     <rect>
-     <x>730</x>
+     <x>870</x>
      <y>10</y>
      <width>100</width>
      <height>32</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+
+    background-color: rgb(242, 189, 76); 
+
+    border: none; 
+
+    color: rgb(0, 0, 0); 
+
+    font: 16px;
+
+} 
+
+QPushButton:hover { 
+
+    background-color: rgb(245, 149, 66); 
+
+    border: none; 
+
+    color: rgb(0, 43, 255); 
+}</string>
    </property>
    <property name="text">
     <string>Log out</string>
@@ -124,23 +157,26 @@ QPushButton:hover {
     <rect>
      <x>70</x>
      <y>100</y>
-     <width>681</width>
-     <height>211</height>
+     <width>901</width>
+     <height>341</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout">
     <item row="1" column="1">
      <widget class="QGroupBox" name="groupBox_4">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(242, 248, 253)</string>
+      </property>
       <property name="title">
        <string/>
       </property>
       <widget class="QLabel" name="label_11">
        <property name="geometry">
         <rect>
-         <x>0</x>
+         <x>10</x>
          <y>10</y>
          <width>141</width>
-         <height>16</height>
+         <height>21</height>
         </rect>
        </property>
        <property name="font">
@@ -152,7 +188,8 @@ QPushButton:hover {
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;</string>
+        <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(242, 248, 253)</string>
        </property>
        <property name="text">
         <string> Report Issue</string>
@@ -163,8 +200,8 @@ QPushButton:hover {
         <rect>
          <x>10</x>
          <y>40</y>
-         <width>181</width>
-         <height>16</height>
+         <width>261</width>
+         <height>71</height>
         </rect>
        </property>
        <property name="font">
@@ -176,20 +213,24 @@ QPushButton:hover {
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 12pt &quot;.AppleSystemUIFont&quot;;</string>
+        <string notr="true">font: 12pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(242, 248, 253)</string>
        </property>
        <property name="text">
-        <string>Report any issues you may encounter. </string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Report any issues you may &lt;/p&gt;&lt;p&gt;encounter. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
       <widget class="QLabel" name="labelIconSend2">
        <property name="geometry">
         <rect>
-         <x>170</x>
+         <x>250</x>
          <y>10</y>
          <width>41</width>
          <height>31</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(242, 248, 253)</string>
        </property>
        <property name="text">
         <string>Icon</string>
@@ -198,11 +239,33 @@ QPushButton:hover {
       <widget class="QPushButton" name="pushButtonReportIssue">
        <property name="geometry">
         <rect>
-         <x>110</x>
-         <y>60</y>
+         <x>190</x>
+         <y>120</y>
          <width>100</width>
          <height>32</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+
+    background-color: rgb(242, 189, 76); 
+
+    border: none; 
+
+    color: rgb(0, 0, 0); 
+
+    font: 16px;
+
+} 
+
+QPushButton:hover { 
+
+    background-color: rgb(245, 149, 66); 
+
+    border: none; 
+
+    color: rgb(0, 43, 255); 
+}</string>
        </property>
        <property name="text">
         <string>Detail</string>
@@ -212,6 +275,9 @@ QPushButton:hover {
     </item>
     <item row="0" column="1">
      <widget class="QGroupBox" name="groupBox_2">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(242, 248, 253)</string>
+      </property>
       <property name="title">
        <string/>
       </property>
@@ -220,8 +286,8 @@ QPushButton:hover {
         <rect>
          <x>0</x>
          <y>10</y>
-         <width>141</width>
-         <height>16</height>
+         <width>211</width>
+         <height>21</height>
         </rect>
        </property>
        <property name="font">
@@ -233,7 +299,8 @@ QPushButton:hover {
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;</string>
+        <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(242, 248, 253)</string>
        </property>
        <property name="text">
         <string> Vaccination Record</string>
@@ -243,9 +310,9 @@ QPushButton:hover {
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>40</y>
-         <width>191</width>
-         <height>16</height>
+         <y>50</y>
+         <width>271</width>
+         <height>31</height>
         </rect>
        </property>
        <property name="font">
@@ -257,7 +324,8 @@ QPushButton:hover {
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 12pt &quot;.AppleSystemUIFont&quot;;</string>
+        <string notr="true">font: 12pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(242, 248, 253)</string>
        </property>
        <property name="text">
         <string>View your Vaccination records.</string>
@@ -266,11 +334,14 @@ QPushButton:hover {
       <widget class="QLabel" name="labelIconView2">
        <property name="geometry">
         <rect>
-         <x>170</x>
+         <x>250</x>
          <y>10</y>
          <width>41</width>
          <height>31</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(242, 248, 253)</string>
        </property>
        <property name="text">
         <string>Icon</string>
@@ -279,11 +350,33 @@ QPushButton:hover {
       <widget class="QPushButton" name="pushButtonVaccinationRecord">
        <property name="geometry">
         <rect>
-         <x>110</x>
-         <y>60</y>
+         <x>190</x>
+         <y>120</y>
          <width>100</width>
          <height>32</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+
+    background-color: rgb(242, 189, 76); 
+
+    border: none; 
+
+    color: rgb(0, 0, 0); 
+
+    font: 16px;
+
+} 
+
+QPushButton:hover { 
+
+    background-color: rgb(245, 149, 66); 
+
+    border: none; 
+
+    color: rgb(0, 43, 255); 
+}</string>
        </property>
        <property name="text">
         <string>Detail</string>
@@ -293,6 +386,9 @@ QPushButton:hover {
     </item>
     <item row="0" column="2">
      <widget class="QGroupBox" name="groupBox_3">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(242, 248, 253)</string>
+      </property>
       <property name="title">
        <string/>
       </property>
@@ -301,8 +397,8 @@ QPushButton:hover {
         <rect>
          <x>0</x>
          <y>10</y>
-         <width>141</width>
-         <height>16</height>
+         <width>151</width>
+         <height>21</height>
         </rect>
        </property>
        <property name="font">
@@ -314,7 +410,8 @@ QPushButton:hover {
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;</string>
+        <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(242, 248, 253)</string>
        </property>
        <property name="text">
         <string> Vaccine Pass</string>
@@ -324,9 +421,9 @@ QPushButton:hover {
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>40</y>
-         <width>181</width>
-         <height>16</height>
+         <y>50</y>
+         <width>251</width>
+         <height>21</height>
         </rect>
        </property>
        <property name="font">
@@ -338,7 +435,8 @@ QPushButton:hover {
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 12pt &quot;.AppleSystemUIFont&quot;;</string>
+        <string notr="true">font: 12pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(242, 248, 253)</string>
        </property>
        <property name="text">
         <string>Request your Vaccine Pass.</string>
@@ -347,11 +445,14 @@ QPushButton:hover {
       <widget class="QLabel" name="labelIconPass">
        <property name="geometry">
         <rect>
-         <x>170</x>
+         <x>240</x>
          <y>10</y>
          <width>41</width>
          <height>31</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(242, 248, 253)</string>
        </property>
        <property name="text">
         <string>Icon</string>
@@ -360,11 +461,33 @@ QPushButton:hover {
       <widget class="QPushButton" name="pushButtonVaccinePass">
        <property name="geometry">
         <rect>
-         <x>110</x>
-         <y>60</y>
+         <x>190</x>
+         <y>120</y>
          <width>100</width>
          <height>32</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+
+    background-color: rgb(242, 189, 76); 
+
+    border: none; 
+
+    color: rgb(0, 0, 0); 
+
+    font: 16px;
+
+} 
+
+QPushButton:hover { 
+
+    background-color: rgb(245, 149, 66); 
+
+    border: none; 
+
+    color: rgb(0, 43, 255); 
+}</string>
        </property>
        <property name="text">
         <string>Detail</string>
@@ -374,6 +497,9 @@ QPushButton:hover {
     </item>
     <item row="0" column="0">
      <widget class="QGroupBox" name="groupBox">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(242, 248, 253)</string>
+      </property>
       <property name="title">
        <string/>
       </property>
@@ -382,8 +508,8 @@ QPushButton:hover {
         <rect>
          <x>0</x>
          <y>10</y>
-         <width>141</width>
-         <height>16</height>
+         <width>221</width>
+         <height>21</height>
         </rect>
        </property>
        <property name="font">
@@ -395,7 +521,8 @@ QPushButton:hover {
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;</string>
+        <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(242, 248, 253)</string>
        </property>
        <property name="text">
         <string> Covid-19 Test Result</string>
@@ -405,9 +532,9 @@ QPushButton:hover {
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>40</y>
-         <width>191</width>
-         <height>16</height>
+         <y>50</y>
+         <width>281</width>
+         <height>41</height>
         </rect>
        </property>
        <property name="font">
@@ -419,7 +546,8 @@ QPushButton:hover {
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 12pt &quot;.AppleSystemUIFont&quot;;</string>
+        <string notr="true">font: 12pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(242, 248, 253)</string>
        </property>
        <property name="text">
         <string>View your Covid-19 test results.</string>
@@ -428,11 +556,14 @@ QPushButton:hover {
       <widget class="QLabel" name="labelIconView1">
        <property name="geometry">
         <rect>
-         <x>170</x>
+         <x>250</x>
          <y>10</y>
          <width>41</width>
          <height>31</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(242, 248, 253)</string>
        </property>
        <property name="text">
         <string>Icon</string>
@@ -441,11 +572,33 @@ QPushButton:hover {
       <widget class="QPushButton" name="pushButtonCovid19TestResult">
        <property name="geometry">
         <rect>
-         <x>110</x>
-         <y>60</y>
+         <x>190</x>
+         <y>120</y>
          <width>100</width>
          <height>32</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+
+    background-color: rgb(242, 189, 76); 
+
+    border: none; 
+
+    color: rgb(0, 0, 0); 
+
+    font: 16px;
+
+} 
+
+QPushButton:hover { 
+
+    background-color: rgb(245, 149, 66); 
+
+    border: none; 
+
+    color: rgb(0, 43, 255); 
+}</string>
        </property>
        <property name="text">
         <string>Detail</string>
@@ -455,16 +608,19 @@ QPushButton:hover {
     </item>
     <item row="1" column="0">
      <widget class="QGroupBox" name="groupBox_5">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(242, 248, 253)</string>
+      </property>
       <property name="title">
        <string/>
       </property>
       <widget class="QLabel" name="label_14">
        <property name="geometry">
         <rect>
-         <x>0</x>
+         <x>10</x>
          <y>10</y>
          <width>141</width>
-         <height>16</height>
+         <height>21</height>
         </rect>
        </property>
        <property name="font">
@@ -476,7 +632,8 @@ QPushButton:hover {
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;</string>
+        <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(242, 248, 253)</string>
        </property>
        <property name="text">
         <string> RAT Result</string>
@@ -486,9 +643,9 @@ QPushButton:hover {
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>40</y>
-         <width>171</width>
-         <height>16</height>
+         <y>50</y>
+         <width>231</width>
+         <height>31</height>
         </rect>
        </property>
        <property name="font">
@@ -500,7 +657,8 @@ QPushButton:hover {
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 12pt &quot;.AppleSystemUIFont&quot;;</string>
+        <string notr="true">font: 12pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(242, 248, 253)</string>
        </property>
        <property name="text">
         <string>Report your RAT Results.</string>
@@ -509,11 +667,14 @@ QPushButton:hover {
       <widget class="QLabel" name="labelIconSend1">
        <property name="geometry">
         <rect>
-         <x>170</x>
+         <x>240</x>
          <y>10</y>
          <width>41</width>
          <height>31</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(242, 248, 253)</string>
        </property>
        <property name="text">
         <string>Icon</string>
@@ -522,11 +683,33 @@ QPushButton:hover {
       <widget class="QPushButton" name="pushButtonRATResult">
        <property name="geometry">
         <rect>
-         <x>110</x>
-         <y>60</y>
+         <x>190</x>
+         <y>120</y>
          <width>100</width>
          <height>32</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+
+    background-color: rgb(242, 189, 76); 
+
+    border: none; 
+
+    color: rgb(0, 0, 0); 
+
+    font: 16px;
+
+} 
+
+QPushButton:hover { 
+
+    background-color: rgb(245, 149, 66); 
+
+    border: none; 
+
+    color: rgb(0, 43, 255); 
+}</string>
        </property>
        <property name="text">
         <string>Detail</string>

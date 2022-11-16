@@ -26,9 +26,9 @@ int main(int argc, char *argv[])
     {
         QSqlDatabase db = QSqlDatabase::addDatabase(DRIVER);
 
-        db.setDatabaseName("/Users/Ryuuuu/Desktop/Share/COV-19-Desktop_App/database2.db");
+//        db.setDatabaseName("/Users/Ryuuuu/Desktop/Share/COV-19-Desktop_App/database2.db");
 
-//        db.setDatabaseName("C:/Users/darij/OneDrive/Desktop/COV-19 Project/COV-19-Desktop_App/database2.db");
+        db.setDatabaseName("C:/Users/darij/OneDrive/Desktop/COV-19 Project/COV-19-Desktop_App/database2.db");
 
         if(!db.open()){
             qWarning() << "MainWindow::DatabaseConnect - ERROR: " << db.lastError().text();
