@@ -17,7 +17,13 @@ public:
     explicit UserRequestVaccinePass(QWidget *parent = nullptr, QString email="email");
     ~UserRequestVaccinePass();
 
+    void hintText();
     void getUesrInfo();
+
+    void recordLog(QString message);
+
+    void showMessage(QString text);
+
 
 private slots:
     void on_pushButtonRequest_clicked();
@@ -33,7 +39,7 @@ private:
     QString lastName;
     QString birthday;
     QString email;
-
+    QString NHINumber;
 };
 
 #endif // USERREQUESTVACCINEPASS_H

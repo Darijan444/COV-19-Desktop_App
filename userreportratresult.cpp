@@ -1,5 +1,6 @@
 #include "landingpage.h"
 #include "userpage.h"
+#include "userprofile.h"
 #include "userreportratresult.h"
 #include "ui_userreportratresult.h"
 
@@ -55,6 +56,12 @@ UserReportRATResult::UserReportRATResult(QWidget *parent, QString email) :
         this->hide();
         landingpage->show();
     });
+    //->UserProfile
+    connect(ui->pushButtonViewProfile,&QPushButton::clicked,[=](){
+        UserProfile * userProfile = new UserProfile(this, email);
+        this->hide();
+        userProfile->show();
+    });
     //Back
     connect(ui->pushButtonBack,&QPushButton::clicked,[=](){
         UserPage * userpage = new UserPage(this,email);
@@ -87,7 +94,7 @@ void UserReportRATResult::getUesrInfo()
         firstName = query.value(1).toString();
 //        lastName = query.value(2).toString();
 //        birthday = query.value(3).toString();
-//        NHINumber = query.value(4).toString();
+        NHINumber = query.value(4).toString();
 //        email = query.value(5).toString();
 //        phone = query.value(6).toString();
 //        password = query.value(7).toString();
@@ -119,21 +126,57 @@ void UserReportRATResult::on_pushButtonSubmit_clicked()
     }else if(ui->checkBoxCYes->isChecked() && ui->checkBoxTNo->isChecked()){
         ratResult = "Negative";
     }else{
-        QMessageBox::information(this,"Caution","Your test result is invalid. Please try again.");
-        return;
+        //QMessageBox::information(this,"Caution","Your test result is invalid. Please try again.");
+        showMessage("Your test result is invalid. Please try again.");
     }
 
-    ratDate = ui->dateEdit->text();
+    if(ratResult=="Positive" || ratResult=="Negative"){
+        ratDate = ui->dateEdit->text();
 
-    QMessageBox::information(this,"Submit","Successfully submitted");
+        //QMessageBox::information(this,"Submit","Successfully submitted");
+        showMessage("Successfully submitted");
 
-    QSqlQuery query(db);
-    query.exec("UPDATE user SET RAT1Result='"+ratResult+"', RAT1Date='"+ratDate+"' WHERE Email='"+email+"'");
+        QSqlQuery query(db);
+        query.exec("UPDATE user SET RAT1Result='"+ratResult+"', RAT1Date='"+ratDate+"' WHERE Email='"+email+"'");
 
 
+        //RecordLog
+        QString message= "User " + firstName + " submitted RAT result";
+        recordLog(message);
 
-    UserPage * userpage = new UserPage(this, email);
-    this->hide();
-    userpage->show();
+        //->UserPage
+        UserPage * userpage = new UserPage(this, email);
+        this->hide();
+        userpage->show();
+
+    }else{
+        UserReportRATResult * userReportRATResult = new UserReportRATResult(this, email);
+        this->hide();
+        userReportRATResult->show();
+    }
+
+
 }
 
+void UserReportRATResult::recordLog(QString message)
+{
+    QDateTime date = QDateTime::currentDateTime();
+    QString formattedTime = date.toString("dd.MM.yyyy hh:mm:ss");
+
+    QSqlQuery query(db);
+    query.exec("INSERT INTO "
+               "logs(Date, FirstName, LastName, NHINumber, Log) "
+               "VALUES('"+formattedTime+"', '"+firstName+"', '"+lastName+"', '"+NHINumber+"', '"+message+"')");
+}
+
+void UserReportRATResult::showMessage(QString text)
+{
+    QMessageBox message;
+    message.setMinimumSize(700,200);
+    message.setWindowTitle("Message");
+    message.setText(text);
+    message.setInformativeText("Please press OK");
+    message.setIcon(QMessageBox::Information);
+    message.setStandardButtons(QMessageBox::Ok);
+    message.exec();
+}

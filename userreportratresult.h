@@ -18,6 +18,9 @@ public:
     ~UserReportRATResult();
 
     void getUesrInfo();
+    void recordLog(QString message);
+
+    void showMessage(QString text);
 
 
 private slots:
@@ -31,9 +34,11 @@ private:
     //Uer Info
     int id;
     QString firstName;
+    QString lastName;
     QString email;
     QString ratResult;
     QString ratDate;
+    QString NHINumber;
 };
 
 #endif // USERREPORTRATRESULT_H

@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>634</width>
-    <height>447</height>
+    <height>337</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -26,7 +26,7 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 24pt &quot;.AppleSystemUIFont&quot;;
+    <string notr="true">font: 30pt &quot;.AppleSystemUIFont&quot;;
 background-color: rgb(104, 161, 229);</string>
    </property>
    <property name="text">
@@ -36,72 +36,147 @@ background-color: rgb(104, 161, 229);</string>
   <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
     <rect>
-     <x>80</x>
+     <x>130</x>
      <y>110</y>
-     <width>461</width>
-     <height>181</height>
+     <width>351</width>
+     <height>121</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(242, 248, 253)</string>
+    <string notr="true">QGroupBox { 
+     border-radius: 3px; 
+	background-color: rgb(242, 248, 253);
+ } </string>
    </property>
    <property name="title">
     <string/>
    </property>
-   <widget class="QWidget" name="layoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>80</x>
-      <y>30</y>
-      <width>301</width>
-      <height>108</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout">
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout">
-       <item>
-        <widget class="QLabel" name="label_3">
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(242, 248, 253)</string>
-         </property>
-         <property name="text">
-          <string>Email</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_4">
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(242, 248, 253)</string>
-         </property>
-         <property name="text">
-          <string>Password</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout_2">
-       <item>
-        <widget class="QLineEdit" name="lineEditEmail">
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(242, 248, 253)</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="lineEditPassword">
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(242, 248, 253)</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-    </layout>
-   </widget>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <spacer name="verticalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>18</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(242, 248, 253)</string>
+          </property>
+          <property name="text">
+           <string>Email</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_6">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>18</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(242, 248, 253)</string>
+          </property>
+          <property name="text">
+           <string>Password</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_7">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>18</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <spacer name="verticalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>18</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEditEmail">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(242, 248, 253)</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>18</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEditPassword">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(242, 248, 253)</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>18</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
   </widget>
   <widget class="QLabel" name="label_7">
    <property name="geometry">
@@ -124,32 +199,25 @@ background-color: rgb(104, 161, 229);</string>
    <property name="geometry">
     <rect>
      <x>160</x>
-     <y>330</y>
+     <y>260</y>
      <width>91</width>
      <height>31</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">QPushButton {
-
     background-color: rgb(242, 189, 76); 
-
-    border: none; 
-
+    border: none;
+     border-radius: 5px; 
     color: rgb(0, 0, 0); 
-
     font: 16px;
-
 } 
 
 QPushButton:hover { 
-
     background-color: rgb(245, 149, 66); 
-
     border: none; 
-
+    border-radius: 5px; 
     color: rgb(0, 43, 255); 
-
 }</string>
    </property>
    <property name="text">
@@ -159,33 +227,26 @@ QPushButton:hover {
   <widget class="QPushButton" name="pushButtonConfirm">
    <property name="geometry">
     <rect>
-     <x>380</x>
-     <y>330</y>
+     <x>360</x>
+     <y>260</y>
      <width>101</width>
      <height>31</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">QPushButton {
-
     background-color: rgb(242, 189, 76); 
-
-    border: none; 
-
+    border: none;
+     border-radius: 5px; 
     color: rgb(0, 0, 0); 
-
     font: 16px;
-
 } 
 
 QPushButton:hover { 
-
     background-color: rgb(245, 149, 66); 
-
     border: none; 
-
+    border-radius: 5px; 
     color: rgb(0, 43, 255); 
-
 }</string>
    </property>
    <property name="text">

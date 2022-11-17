@@ -102,8 +102,6 @@ AdminMain::AdminMain(QWidget *parent) :
     reportsCount = query.value(0).toInt();
 
 
-//    qDebug() << issuedVaccinePassCount;
-
     chartView = new QChartView(createBarChart(m_valueCount));
     ui->gridLayout->addWidget(chartView, 2, 0);
     charts << chartView;
@@ -136,7 +134,7 @@ QChart *AdminMain::createBarChart(int valueCount) const
 
     //X-Axis
     QStringList categories;
-    categories << "Users" << "2 Doses" << "RAT Positive" << "issued Pass" << "Reports";
+    categories << "Users" << "2 Doses" << "RAT +" << "Pass" << "Reports";
     QBarCategoryAxis *axisX = new QBarCategoryAxis();
     axisX->append(categories);
 
@@ -144,9 +142,6 @@ QChart *AdminMain::createBarChart(int valueCount) const
     chart->createDefaultAxes();
     chart->setAxisX(axisX, series);
     chart->axes(Qt::Vertical).first()->setRange(0, 10);
-    //chart->setAxisY(0, 10);
-
-
 
     return chart;
 }

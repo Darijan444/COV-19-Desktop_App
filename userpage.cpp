@@ -100,13 +100,6 @@ UserPage::UserPage(QWidget *parent, QString email) :
 
 
 
-//    if(!db.open()){
-//        qWarning() << "MainWindow::DatabaseConnect - ERROR: " << db.lastError().text();
-////        return;
-//    }
-
-
-
     //Label Name
     ui->labelUserName->setText(firstName);
 

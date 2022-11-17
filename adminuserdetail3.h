@@ -61,6 +61,7 @@ private:
     QString VaccinePass;
     QString QRNHINumber;
     QString QRVaccinePass;
+    QString vaccinePassIssued;
 };
 
 #endif // ADMINUSERDETAIL3_H

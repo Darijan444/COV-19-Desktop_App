@@ -27,6 +27,8 @@ public:
     bool isEmailExist(QString email);
     bool isPasswordValid(QString password);
 
+    void showMessage(QString text);
+
 
 private slots:
 //    void on_pushButtonConfirm_clicked(QString firstName, QString lastName, QString email, QString password);

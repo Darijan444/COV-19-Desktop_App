@@ -3,12 +3,15 @@
 #include "login.h"
 #include "ui_landingpage.h"
 
+
+
+#include <adminuserdetail3.h>
+
 LandingPage::LandingPage(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::LandingPage)
 {
     ui->setupUi(this);
-
 
     /////////////////////////////////////////////////////////////////////////////
     //LandingPage->Signup
@@ -36,10 +39,11 @@ LandingPage::LandingPage(QWidget *parent) :
     /////////////////////////////////////////////////////////////////////////////
     //External Link
     /////////////////////////////////////////////////////////////////////////////
-    ui->labelLink->setText("<a href=\"https://www.who.int//\">WHO Link (test)</a>");
+    ui->labelLink->setText("<a href=\"https://www.who.int//\">WHO Link </a>");
     ui->labelLink->setTextFormat(Qt::RichText);
     ui->labelLink->setTextInteractionFlags(Qt::TextBrowserInteraction);
     ui->labelLink->setOpenExternalLinks(true);
+
 
 
 }

@@ -21,6 +21,7 @@ Signup::Signup(QWidget *parent)
 {
     ui->setupUi(this);
 
+
     //Hide password
     ui->lineEditPassword->setEchoMode(QLineEdit::Password);
     ui->lineEditPasswordConfirm->setEchoMode(QLineEdit::Password);
@@ -82,7 +83,9 @@ void Signup::on_pushButtonConfirm_clicked()
                     //5. Password Matching Check
                     if(isPasswordMatch() == true)
                     {
-                        QMessageBox::information(this,"Signup","Signup successfully!");
+                        //QMessageBox::information(this,"Signup","Signup successfully!");
+                        showMessage("Signup successfully!");
+
 
                         //Register uer information
                         query.exec("INSERT INTO "
@@ -113,7 +116,12 @@ bool Signup::isBlankExist()
     {
         return true;
     }else{
-        QMessageBox::information(this,"Signup","Please fill out all");
+        //QMessageBox::information(this,"Signup","Please fill out all");
+        showMessage("Please fill out all");
+
+        Signup * signUp = new Signup(this);
+        this->hide();
+        signUp->show();
     }
 }
 
@@ -143,19 +151,24 @@ bool Signup::isPasswordValid(QString password)
     bool numberHasMatch = numberMatch.hasMatch();
 
     if (digitHasMatch == false){
-        QMessageBox::information(this,"Validation","Password: \nAt least 8 characters");
+        //QMessageBox::information(this,"Validation","Password: \nAt least 8 characters");
+        showMessage("Password: \nAt least 8 characters");
         digitFlag = 1;
     }else if (upperCaseHasMatch == false){
-        QMessageBox::information(this,"Validation","Password: At least one upper case character");
+        //QMessageBox::information(this,"Validation","Password: At least one upper case character");
+        showMessage("Password: \nAt least 8 characters");
         upperFlag = 1;
     }else if (lowerCaseHasMatch == false){
-        QMessageBox::information(this,"Validation","Password: At least one lower case character");
+        //QMessageBox::information(this,"Validation","Password: At least one lower case character");
+        showMessage("Password: At least one lower case character");
         lowerFlag = 1;
     }else if (specialCharacterCaseHasMatch == false){
-        QMessageBox::information(this,"Validation","Password: At least one special character (@, !, ?, #)");
+        //QMessageBox::information(this,"Validation","Password: At least one special character (@, !, ?, #)");
+        showMessage("Password: At least one special character (@, !, ?, #)");
         specialCharacterFlag = 1;
     }else if (numberHasMatch == false){
-        QMessageBox::information(this,"Validation","Password: At least one number");
+        //QMessageBox::information(this,"Validation","Password: At least one number");
+        showMessage("Password: At least one number");
         numberFlag = 1;
     }
 
@@ -165,6 +178,10 @@ bool Signup::isPasswordValid(QString password)
         result = true;
     } else {
         result = false;
+
+        Signup * signUp = new Signup(this);
+        this->hide();
+        signUp->show();
     }
     return result;
 }
@@ -180,7 +197,8 @@ bool Signup::isPasswordMatch()
     {
         return true;
     }else{
-       QMessageBox::information(this,"Signup","The password doesn't match");
+       //QMessageBox::information(this,"Signup","The password doesn't match");
+       showMessage("The password doesn't match");
     }
 }
 
@@ -195,7 +213,12 @@ bool Signup::isEmailValid(QString email)
     {
         return true;
     }else{
-       QMessageBox::information(this,"Signup","Please enter a valid email address");
+       //QMessageBox::information(this,"Signup","Please enter a valid email address");
+       showMessage("Please enter a valid email address");
+
+       Signup * signUp = new Signup(this);
+       this->hide();
+       signUp->show();
     }
 }
 
@@ -211,7 +234,25 @@ bool Signup::isEmailExist(QString email)
         return true;
 
     }else{
-        QMessageBox::information(this,"Signup","Your email address is already registered.");
+        //QMessageBox::information(this,"Signup","Your email address is already registered.");
+        showMessage("Your email address is already registered.");
+
+        Signup * signUp = new Signup(this);
+        this->hide();
+        signUp->show();
+
         return false;
     }
+}
+
+void Signup::showMessage(QString text)
+{
+    QMessageBox message;
+    message.setMinimumSize(700,200);
+    message.setWindowTitle("Message");
+    message.setText(text);
+    message.setInformativeText("Please press OK");
+    message.setIcon(QMessageBox::Information);
+    message.setStandardButtons(QMessageBox::Ok);
+    message.exec();
 }

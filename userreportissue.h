@@ -17,7 +17,11 @@ public:
     explicit UserReportIssue(QWidget *parent = nullptr, QString email="email");
     ~UserReportIssue();
 
+    void hintText();
     void getUesrInfo();
+    void recordLog(QString message);
+
+    void showMessage(QString text);
 
 private slots:
     void on_pushButtonRequest_clicked();
@@ -34,6 +38,7 @@ private:
     QString birthday;
     QString email;
     QString report;
+    QString NHINumber;
 };
 
 #endif // USERREPORTISSUE_H

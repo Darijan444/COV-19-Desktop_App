@@ -37,7 +37,10 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(242, 248, 253)</string>
+    <string notr="true">QGroupBox { 
+     border-radius: 5px; 
+	background-color: rgb(242, 248, 253);
+ }</string>
    </property>
    <property name="title">
     <string/>
@@ -193,57 +196,20 @@ background-color: rgb(104, 161, 229);</string>
     <string>Dashboard</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButtonLogout">
-   <property name="geometry">
-    <rect>
-     <x>599</x>
-     <y>28</y>
-     <width>93</width>
-     <height>29</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton {
-
-    background-color: rgb(242, 189, 76); 
-
-    border: none; 
-
-    color: rgb(0, 0, 0); 
-
-    font: 16px;
-
-} 
-
-QPushButton:hover { 
-
-    background-color: rgb(245, 149, 66); 
-
-    border: none; 
-
-    color: rgb(0, 43, 255); 
-
-}</string>
-   </property>
-   <property name="text">
-    <string>Log out</string>
-   </property>
-  </widget>
-  <widget class="QSplitter" name="splitter">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>13</x>
-     <y>13</y>
-     <width>571</width>
-     <height>52</height>
+     <y>10</y>
+     <width>681</width>
+     <height>61</height>
     </rect>
    </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-   <widget class="QPushButton" name="pushButtonMyHealthAccount">
-    <property name="styleSheet">
-     <string notr="true">QPushButton {
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="pushButtonMyHealthAccount">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
 	background-color: rgb(0, 0, 0,0.1); 
 	border: none; 
 	color: rgb(0, 0, 0); 
@@ -252,29 +218,48 @@ QPushButton:hover {
 } 
 
 </string>
-    </property>
-    <property name="text">
-     <string>My health account </string>
-    </property>
-   </widget>
-   <widget class="QGroupBox" name="groupBox_6">
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(242, 248, 253)</string>
-    </property>
-    <property name="title">
-     <string/>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_2">
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout">
-       <item>
+      </property>
+      <property name="text">
+       <string>My health account </string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>188</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox_6">
+      <property name="styleSheet">
+       <string notr="true">QGroupBox { 
+     border-radius: 5px; 
+	background-color: rgb(242, 248, 253);
+ } </string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
         <widget class="QLabel" name="labelAdmin">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(242, 248, 253,0)</string>
+         </property>
          <property name="text">
           <string>Icon</string>
          </property>
         </widget>
        </item>
-       <item>
+       <item row="0" column="1">
         <widget class="QLabel" name="label_17">
          <property name="font">
           <font>
@@ -285,7 +270,8 @@ QPushButton:hover {
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;</string>
+          <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(242, 248, 253,0)</string>
          </property>
          <property name="text">
           <string>Admin</string>
@@ -293,9 +279,33 @@ QPushButton:hover {
         </widget>
        </item>
       </layout>
-     </item>
-    </layout>
-   </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButtonLogout">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(242, 189, 76); 
+    border: none;
+     border-radius: 5px; 
+    color: rgb(0, 0, 0); 
+    font: 16px;
+    padding: 5 20px;
+} 
+
+QPushButton:hover { 
+    background-color: rgb(245, 149, 66); 
+    border: none; 
+    border-radius: 5px; 
+    color: rgb(0, 43, 255); 
+}</string>
+      </property>
+      <property name="text">
+       <string>Log out</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>
