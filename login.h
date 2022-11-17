@@ -28,10 +28,17 @@ public:
     explicit Login(QWidget *parent = nullptr);
     ~Login();
 
-    QSqlDatabase db;
+    bool isBlankExist();
+    void showMessage(QString text);
+
+
+private slots:
+    void on_pushButtonConfirm_clicked();
 
 private:
     Ui::Login *ui;
+
+    QSqlDatabase db;
 
     QString email, password;
 };

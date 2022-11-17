@@ -1,8 +1,11 @@
 #include "landingpage.h"
 #include "userpage.h"
+#include "userprofile.h"
 #include "userrequestvaccinepass.h"
 #include "ui_userrequestvaccinepass.h"
 #include <QMessageBox>
+
+#include <QDateTime>
 
 UserRequestVaccinePass::UserRequestVaccinePass(QWidget *parent, QString email) :
     QDialog(parent),
@@ -25,6 +28,8 @@ UserRequestVaccinePass::UserRequestVaccinePass(QWidget *parent, QString email) :
     //Set User Information
     ui->labelUserName->setText(firstName);
 
+    //Set hint Text
+    hintText();
 
     //->Home
     connect(ui->pushButtonHome,&QPushButton::clicked,[=](){
@@ -40,6 +45,13 @@ UserRequestVaccinePass::UserRequestVaccinePass(QWidget *parent, QString email) :
         landingpage->show();
     });
 
+    //->UserProfile
+    connect(ui->pushButtonViewProfile,&QPushButton::clicked,[=](){
+        UserProfile * userProfile = new UserProfile(this, email);
+        this->hide();
+        userProfile->show();
+    });
+
     //Back
     connect(ui->pushButtonBack,&QPushButton::clicked,[=](){
         UserPage * userpage = new UserPage(this,email);
@@ -53,6 +65,17 @@ UserRequestVaccinePass::~UserRequestVaccinePass()
     delete ui;
 }
 
+void UserRequestVaccinePass::hintText()
+{
+    ui->lineEditFirstName->setPlaceholderText("First name");
+    ui->lineEditLastName->setPlaceholderText("Last name");
+    ui->lineEditDay->setPlaceholderText("01");
+    ui->lineEditMonth->setPlaceholderText("01");
+    ui->lineEditYear->setPlaceholderText("2000");
+    ui->lineEditEmail->setPlaceholderText("email@gmail.com");
+}
+
+
 //Get User Information
 void UserRequestVaccinePass::getUesrInfo()
 {
@@ -64,7 +87,7 @@ void UserRequestVaccinePass::getUesrInfo()
         firstName = query.value(1).toString();
         lastName = query.value(2).toString();
         birthday = query.value(3).toString();
-//        NHINumber = query.value(4).toString();
+        NHINumber = query.value(4).toString();
         email = query.value(5).toString();
 //        phone = query.value(6).toString();
 //        password = query.value(7).toString();
@@ -100,19 +123,51 @@ void UserRequestVaccinePass::on_pushButtonRequest_clicked()
 
     //Submit request (Need to update(Birth is not included))
     if(userInputFirstName == firstName && userInputLastName == lastName && userInputEmail == email){
-        QMessageBox::information(this,"Submit","Successfully submitted");
+        //QMessageBox::information(this,"Submit","Successfully submitted");
+        showMessage("Successfully submitted");
 
         //Update the Vaccine Pass status of user table
         QSqlQuery query(db);
         query.exec("UPDATE user SET VaccinePass = 'Requested' WHERE Email='"+email+"'");
 
+        //RecordLog
+        QString message= "User " + firstName + " requested Vaccine Pass";
+        recordLog(message);
 
+        //->UserPage
         UserPage * userpage = new UserPage(this, email);
         this->hide();
         userpage->show();
 
     } else {
-        QMessageBox::information(this,"Submit","You entered wrong informaion");
+        //QMessageBox::information(this,"Submit","You entered wrong informaion");
+        showMessage("You entered wrong informaion");
+
+        UserRequestVaccinePass * userRequestVaccinePass = new UserRequestVaccinePass(this, email);
+        this->hide();
+        userRequestVaccinePass->show();
     }
 }
 
+void UserRequestVaccinePass::recordLog(QString message)
+{
+    QDateTime date = QDateTime::currentDateTime();
+    QString formattedTime = date.toString("dd.MM.yyyy hh:mm:ss");
+
+    QSqlQuery query(db);
+    query.exec("INSERT INTO "
+               "logs(Date, FirstName, LastName, NHINumber, Log) "
+               "VALUES('"+formattedTime+"', '"+firstName+"', '"+lastName+"', '"+NHINumber+"', '"+message+"')");
+}
+
+void UserRequestVaccinePass::showMessage(QString text)
+{
+    QMessageBox message;
+    message.setMinimumSize(700,200);
+    message.setWindowTitle("Message");
+    message.setText(text);
+    message.setInformativeText("Please press OK");
+    message.setIcon(QMessageBox::Information);
+    message.setStandardButtons(QMessageBox::Ok);
+    message.exec();
+}

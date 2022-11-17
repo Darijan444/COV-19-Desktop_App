@@ -8,7 +8,7 @@ HEADERS += \
     landingpage.h \
     signup.h \
     login.h \
-    database.h \
+#    database.h \
     userpage.h \
     usercovid19testresult.h \
     userprofile.h \
@@ -31,7 +31,7 @@ SOURCES += \
     landingpage.cpp \
     signup.cpp \
     login.cpp \
-    database.cpp \
+#    database.cpp \
     userpage.cpp \
     usercovid19testresult.cpp \
     userprofile.cpp \

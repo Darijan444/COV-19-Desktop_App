@@ -24,7 +24,7 @@ UserProfile::UserProfile(QWidget *parent, QString email) :
 
     QPixmap user(":/Images/user.png");
     ui->labelIconUser->setPixmap(user.scaled(iconSize,iconSize));
-    QPixmap qrcode(":/Images/qrcode.png");
+    QPixmap qrcode(QRNHINumber);
     ui->labelQRCode->setPixmap(qrcode.scaled(iconSizeL,iconSizeL));
 
     //Set User Information
@@ -87,6 +87,7 @@ void UserProfile::getUesrInfo()
 //        RAT2Date = query.value(17).toString();
 //        RAT2KitName = query.value(18).toString();
 //        RAT2Result = query.value(19).toString();
+        QRNHINumber = query.value(21).toString();
 
     } else {
         qWarning() << query.lastError();

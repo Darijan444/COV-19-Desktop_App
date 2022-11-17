@@ -1,5 +1,6 @@
 #include "landingpage.h"
 #include "userpage.h"
+#include "userprofile.h"
 #include "uservaccinepass.h"
 #include "ui_uservaccinepass.h"
 
@@ -46,6 +47,13 @@ UserVaccinePass::UserVaccinePass(QWidget *parent, QString email) :
         LandingPage * landingpage = new LandingPage(this);
         this->hide();
         landingpage->show();
+    });
+
+    //->UserProfile
+    connect(ui->pushButtonViewProfile,&QPushButton::clicked,[=](){
+        UserProfile * userProfile = new UserProfile(this, email);
+        this->hide();
+        userProfile->show();
     });
 }
 

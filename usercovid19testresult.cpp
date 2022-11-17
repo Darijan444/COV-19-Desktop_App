@@ -1,5 +1,6 @@
 #include "landingpage.h"
 #include "userpage.h"
+#include "userprofile.h"
 #include "usercovid19testresult.h"
 #include "ui_usercovid19testresult.h"
 
@@ -22,9 +23,9 @@ UserCovid19TestResult::UserCovid19TestResult(QWidget *parent, QString email) :
     QPixmap user(":/Images/user.png");
     ui->labelIconUser->setPixmap(user.scaled(iconSize,iconSize));
     QPixmap kit1(":/Images/test.png");
-    ui->labelCapsule1->setPixmap(kit1.scaled(iconSize,iconSize));
+    ui->labelRatKitImage1->setPixmap(kit1.scaled(iconSize,iconSize));
     QPixmap kit2(":/Images/test.png");
-    ui->labelCapsule2->setPixmap(kit2.scaled(iconSize,iconSize));
+    ui->labelRatKitImage2->setPixmap(kit2.scaled(iconSize,iconSize));
 
 
     //Set User Information
@@ -48,6 +49,12 @@ UserCovid19TestResult::UserCovid19TestResult(QWidget *parent, QString email) :
         LandingPage * landingpage = new LandingPage(this);
         this->hide();
         landingpage->show();
+    });
+    //->UserProfile
+    connect(ui->pushButtonViewProfile,&QPushButton::clicked,[=](){
+        UserProfile * userProfile = new UserProfile(this, email);
+        this->hide();
+        userProfile->show();
     });
 
 }

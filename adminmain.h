@@ -19,9 +19,6 @@ public:
     explicit AdminMain(QWidget *parent = nullptr);
     ~AdminMain();
 
-//    void createBarChart();
-
-
 
 private:
     Ui::AdminMain *ui;

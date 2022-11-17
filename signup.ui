@@ -19,14 +19,22 @@
   <widget class="QLabel" name="label_6">
    <property name="geometry">
     <rect>
-     <x>80</x>
+     <x>30</x>
      <y>20</y>
      <width>321</width>
      <height>51</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>.AppleSystemUIFont</family>
+     <pointsize>30</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
    <property name="styleSheet">
-    <string notr="true">font: 24pt &quot;.AppleSystemUIFont&quot;;
+    <string notr="true">font: 30pt &quot;.AppleSystemUIFont&quot;;
 background-color: rgb(104, 161, 229);</string>
    </property>
    <property name="text">
@@ -55,138 +63,129 @@ background-color: rgb(104, 161, 229);</string>
     <rect>
      <x>130</x>
      <y>120</y>
-     <width>401</width>
-     <height>221</height>
+     <width>391</width>
+     <height>200</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(242, 248, 253)</string>
+    <string notr="true">QGroupBox { 
+     border-radius: 5px; 
+	background-color: rgb(242, 248, 253);
+ } 
+
+
+</string>
    </property>
    <property name="title">
     <string/>
    </property>
-   <widget class="QWidget" name="layoutWidget_2">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>20</y>
-      <width>341</width>
-      <height>180</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout">
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout">
-       <item>
-        <widget class="QLabel" name="label">
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(242, 248, 253)</string>
-         </property>
-         <property name="text">
-          <string>First Name</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_2">
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(242, 248, 253)</string>
-         </property>
-         <property name="text">
-          <string>Last Name</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_3">
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(242, 248, 253)</string>
-         </property>
-         <property name="text">
-          <string>Email</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_13">
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(242, 248, 253)</string>
-         </property>
-         <property name="text">
-          <string>NHI Number</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_4">
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(242, 248, 253)</string>
-         </property>
-         <property name="text">
-          <string>Password</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_5">
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(242, 248, 253)</string>
-         </property>
-         <property name="text">
-          <string>Password(Confirm)</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout_2">
-       <item>
-        <widget class="QLineEdit" name="lineEditFirstName">
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(242, 248, 253)</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="lineEditLastName">
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(242, 248, 253)</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="lineEditEmail">
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(242, 248, 253)</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="lineEditNHINumber">
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(242, 248, 253)</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="lineEditPassword">
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(242, 248, 253)</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="lineEditPasswordConfirm">
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(242, 248, 253)</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-    </layout>
-   </widget>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(242, 248, 253)</string>
+      </property>
+      <property name="text">
+       <string>First Name</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="lineEditFirstName">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(242, 248, 253)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(242, 248, 253)</string>
+      </property>
+      <property name="text">
+       <string>Last Name</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="lineEditLastName">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(242, 248, 253)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(242, 248, 253)</string>
+      </property>
+      <property name="text">
+       <string>Email</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="lineEditEmail">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(242, 248, 253)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_13">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(242, 248, 253)</string>
+      </property>
+      <property name="text">
+       <string>NHI Number</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="lineEditNHINumber">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(242, 248, 253)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="whatsThis">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;background-color: rgb(242, 248, 253,0)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(242, 248, 253)</string>
+      </property>
+      <property name="text">
+       <string>Password</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLineEdit" name="lineEditPassword">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(242, 248, 253)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="label_5">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(242, 248, 253)</string>
+      </property>
+      <property name="text">
+       <string>Password(Confirm)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QLineEdit" name="lineEditPasswordConfirm">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(242, 248, 253)</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
   <widget class="QGroupBox" name="groupBox_2">
    <property name="geometry">
@@ -198,63 +197,98 @@ background-color: rgb(104, 161, 229);</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(242, 248, 253)</string>
+    <string notr="true">QGroupBox { 
+     border-radius: 5px; 
+	background-color: rgb(242, 248, 253);
+ } 
+
+
+</string>
    </property>
    <property name="title">
     <string>Password</string>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout_3">
-    <item>
-     <widget class="QLabel" name="label_8">
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(242, 248, 253)</string>
-      </property>
-      <property name="text">
-       <string>- At least 8 characters</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QLabel" name="label_9">
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(242, 248, 253)</string>
-      </property>
-      <property name="text">
-       <string>- Uppercase (A-Z)</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QLabel" name="label_10">
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(242, 248, 253)</string>
-      </property>
-      <property name="text">
-       <string>- Lowercase (a-z)</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QLabel" name="label_11">
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(242, 248, 253)</string>
-      </property>
-      <property name="text">
-       <string>- Number (0-9)</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QLabel" name="label_12">
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(242, 248, 253)</string>
-      </property>
-      <property name="text">
-       <string>- Symbols (#,$,%,&amp;,!)</string>
-      </property>
-     </widget>
-    </item>
-   </layout>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>33</y>
+      <width>133</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253,0)</string>
+    </property>
+    <property name="text">
+     <string>- At least 8 characters</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>57</y>
+      <width>111</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253,0)</string>
+    </property>
+    <property name="text">
+     <string>- Uppercase (A-Z)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>81</y>
+      <width>107</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253,0)
+</string>
+    </property>
+    <property name="text">
+     <string>- Lowercase (a-z)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>105</y>
+      <width>93</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253,0)</string>
+    </property>
+    <property name="text">
+     <string>- Number (0-9)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>129</y>
+      <width>130</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253,0)</string>
+    </property>
+    <property name="text">
+     <string>- Symbols (#,$,%,&amp;,!)</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QPushButton" name="pushButtonBack">
    <property name="geometry">
@@ -267,25 +301,18 @@ background-color: rgb(104, 161, 229);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">QPushButton {
-
     background-color: rgb(242, 189, 76); 
-
-    border: none; 
-
+    border: none;
+     border-radius: 5px; 
     color: rgb(0, 0, 0); 
-
     font: 16px;
-
 } 
 
 QPushButton:hover { 
-
     background-color: rgb(245, 149, 66); 
-
     border: none; 
-
+    border-radius: 5px; 
     color: rgb(0, 43, 255); 
-
 }</string>
    </property>
    <property name="text">
@@ -303,25 +330,18 @@ QPushButton:hover {
    </property>
    <property name="styleSheet">
     <string notr="true">QPushButton {
-
     background-color: rgb(242, 189, 76); 
-
-    border: none; 
-
+    border: none;
+     border-radius: 5px; 
     color: rgb(0, 0, 0); 
-
     font: 16px;
-
 } 
 
 QPushButton:hover { 
-
     background-color: rgb(245, 149, 66); 
-
     border: none; 
-
+    border-radius: 5px; 
     color: rgb(0, 43, 255); 
-
 }</string>
    </property>
    <property name="text">

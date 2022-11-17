@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>831</width>
-    <height>782</height>
+    <height>784</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,28 +16,11 @@
   <property name="styleSheet">
    <string notr="true">background-color: rgb(104, 161, 229);</string>
   </property>
-  <widget class="QLabel" name="label_6">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>10</y>
-     <width>331</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 24pt &quot;.AppleSystemUIFont&quot;;
-background-color: rgb(104, 161, 229);</string>
-   </property>
-   <property name="text">
-    <string>My health account </string>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_7">
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>140</y>
+     <y>149</y>
      <width>291</width>
      <height>31</height>
     </rect>
@@ -54,13 +37,16 @@ background-color: rgb(104, 161, 229);</string>
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>80</y>
+     <y>89</y>
      <width>481</width>
      <height>41</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(242, 248, 253)</string>
+    <string notr="true">QGroupBox { 
+     border-radius: 5px; 
+	background-color: rgb(242, 248, 253);
+ } </string>
    </property>
    <property name="title">
     <string/>
@@ -73,6 +59,9 @@ background-color: rgb(104, 161, 229);</string>
       <width>16</width>
       <height>16</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253,0)</string>
     </property>
     <property name="text">
      <string>/</string>
@@ -88,7 +77,7 @@ background-color: rgb(104, 161, 229);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(242, 248, 253)</string>
+     <string notr="true">background-color: rgb(242, 248, 253, 0)</string>
     </property>
     <property name="text">
      <string> Report a RAT Result</string>
@@ -122,73 +111,394 @@ QPushButton:hover {
     </property>
    </widget>
   </widget>
-  <widget class="QGroupBox" name="groupBox_6">
+  <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
     <rect>
-     <x>530</x>
-     <y>10</y>
-     <width>181</width>
-     <height>61</height>
+     <x>160</x>
+     <y>190</y>
+     <width>445</width>
+     <height>491</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(242, 248, 253)</string>
+    <string notr="true">QGroupBox { 
+     border-radius: 5px; 
+	background-color: rgb(242, 248, 253);
+ } </string>
    </property>
    <property name="title">
     <string/>
    </property>
-   <widget class="QLabel" name="labelUserName">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>10</y>
-      <width>121</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>.AppleSystemUIFont</family>
-      <pointsize>14</pointsize>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;
-background-color: rgb(242, 248, 253)</string>
-    </property>
-    <property name="text">
-     <string>User Name</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="labelIconUser">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>0</y>
-      <width>41</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(242, 248, 253)</string>
-    </property>
-    <property name="text">
-     <string>Icon</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButtonViewProfile">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>40</y>
-      <width>71</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton {
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="1">
+     <widget class="QLabel" name="labelRATKitImage">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(242, 248, 253, 0)</string>
+      </property>
+      <property name="text">
+       <string>RAT Kit Image</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <spacer name="horizontalSpacer_3">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>38</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="1" column="1">
+     <layout class="QVBoxLayout" name="verticalLayout_7">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(242, 248, 253)</string>
+            </property>
+            <property name="text">
+             <string>Is the control line (C) visible?</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(242, 248, 253)</string>
+            </property>
+            <property name="text">
+             <string>Is the test line (T) visible?</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QCheckBox" name="checkBoxCYes">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(242, 248, 253)</string>
+              </property>
+              <property name="text">
+               <string>Yes</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBoxCNo">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(242, 248, 253)</string>
+              </property>
+              <property name="text">
+               <string>No</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QCheckBox" name="checkBoxTYes">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(242, 248, 253)</string>
+              </property>
+              <property name="text">
+               <string>Yes</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBoxTNo">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(242, 248, 253)</string>
+              </property>
+              <property name="text">
+               <string>No</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>228</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="labelLink">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(242, 248, 253)</string>
+          </property>
+          <property name="text">
+           <string>Link</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(242, 248, 253)</string>
+            </property>
+            <property name="text">
+             <string>Day test was taken (Day/Month/Year)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_5">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(242, 248, 253)</string>
+            </property>
+            <property name="text">
+             <string>Time test was taken</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <widget class="QDateEdit" name="dateEdit">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(242, 248, 253)</string>
+            </property>
+            <property name="dateTime">
+             <datetime>
+              <hour>3</hour>
+              <minute>0</minute>
+              <second>0</second>
+              <year>2021</year>
+              <month>12</month>
+              <day>28</day>
+             </datetime>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTimeEdit" name="timeEdit">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(242, 248, 253)</string>
+            </property>
+            <property name="dateTime">
+             <datetime>
+              <hour>9</hour>
+              <minute>0</minute>
+              <second>0</second>
+              <year>2021</year>
+              <month>12</month>
+              <day>22</day>
+             </datetime>
+            </property>
+            <property name="time">
+             <time>
+              <hour>9</hour>
+              <minute>0</minute>
+              <second>0</second>
+             </time>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="2">
+     <spacer name="horizontalSpacer_4">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>38</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="pushButtonBack">
+   <property name="geometry">
+    <rect>
+     <x>204</x>
+     <y>710</y>
+     <width>121</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: rgb(242, 189, 76); 
+    border: none;
+     border-radius: 5px; 
+    color: rgb(0, 0, 0); 
+    font: 16px;
+} 
+
+QPushButton:hover { 
+    background-color: rgb(245, 149, 66); 
+    border: none; 
+    border-radius: 5px; 
+    color: rgb(0, 43, 255); 
+    padding: 5 20px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonSubmit">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>710</y>
+     <width>121</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: rgb(242, 189, 76); 
+    border: none;
+     border-radius: 5px; 
+    color: rgb(0, 0, 0); 
+    font: 16px;
+} 
+
+QPushButton:hover { 
+    background-color: rgb(245, 149, 66); 
+    border: none; 
+    border-radius: 5px; 
+    color: rgb(0, 43, 255); 
+    padding: 5 20px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Submit</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>811</width>
+     <height>75</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_4">
+    <item>
+     <widget class="QLabel" name="label_3">
+      <property name="styleSheet">
+       <string notr="true">font: 30pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(104, 161, 229);</string>
+      </property>
+      <property name="text">
+       <string>My Health Account </string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>368</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox_6">
+      <property name="styleSheet">
+       <string notr="true">QGroupBox { 
+     border-radius: 3px; 
+	background-color: rgb(242, 248, 253);
+ } </string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QLabel" name="labelIconUser">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(242, 248, 253,0)</string>
+         </property>
+         <property name="text">
+          <string>Icon</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <item>
+          <widget class="QLabel" name="labelUserName">
+           <property name="font">
+            <font>
+             <family>.AppleSystemUIFont</family>
+             <pointsize>14</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(242, 248, 253,0)</string>
+           </property>
+           <property name="text">
+            <string>User Name</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButtonViewProfile">
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
 	background-color: rgb(0, 0, 0,0.1); 
 	border: none; 
 	color: rgb(0, 0, 0); 
@@ -200,326 +510,59 @@ QPushButton:hover {
 	border: none; 
 	color: rgb(0, 43, 255); 
 }</string>
-    </property>
-    <property name="text">
-     <string>View Profile</string>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QPushButton" name="pushButtonLogout">
-   <property name="geometry">
-    <rect>
-     <x>720</x>
-     <y>10</y>
-     <width>100</width>
-     <height>32</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton {
-
-    background-color: rgb(242, 189, 76); 
-
-    border: none; 
-
-    color: rgb(0, 0, 0); 
-
-    font: 16px;
-
-} 
-
-QPushButton:hover { 
-
-    background-color: rgb(245, 149, 66); 
-
-    border: none; 
-
-    color: rgb(0, 43, 255); 
-
-}</string>
-   </property>
-   <property name="text">
-    <string>Log out</string>
-   </property>
-  </widget>
-  <widget class="QGroupBox" name="groupBox">
-   <property name="geometry">
-    <rect>
-     <x>60</x>
-     <y>190</y>
-     <width>711</width>
-     <height>511</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(242, 248, 253)</string>
-   </property>
-   <property name="title">
-    <string/>
-   </property>
-   <widget class="QLabel" name="labelRATKitImage">
-    <property name="geometry">
-     <rect>
-      <x>210</x>
-      <y>50</y>
-      <width>301</width>
-      <height>251</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(242, 248, 253)</string>
-    </property>
-    <property name="text">
-     <string>RAT Kit Image</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QWidget" name="layoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>170</x>
-      <y>320</y>
-      <width>391</width>
-      <height>161</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_3">
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout_2">
-       <item>
-        <widget class="QLabel" name="label">
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(242, 248, 253)</string>
-         </property>
-         <property name="text">
-          <string>Is the control line (C) visible?</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_2">
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(242, 248, 253)</string>
-         </property>
-         <property name="text">
-          <string>Is the test line (T) visible?</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <spacer name="horizontalSpacer">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_4">
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(242, 248, 253)</string>
-         </property>
-         <property name="text">
-          <string>Day test was taken (Day/Month/Year)</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_5">
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(242, 248, 253)</string>
-         </property>
-         <property name="text">
-          <string>Time test was taken</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout">
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout">
-         <item>
-          <widget class="QCheckBox" name="checkBoxCYes">
-           <property name="styleSheet">
-            <string notr="true">background-color: rgb(242, 248, 253)</string>
            </property>
            <property name="text">
-            <string>Yes</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QCheckBox" name="checkBoxCNo">
-           <property name="styleSheet">
-            <string notr="true">background-color: rgb(242, 248, 253)</string>
-           </property>
-           <property name="text">
-            <string>No</string>
+            <string>View Profile</string>
            </property>
           </widget>
          </item>
         </layout>
        </item>
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_2">
-         <item>
-          <widget class="QCheckBox" name="checkBoxTYes">
-           <property name="styleSheet">
-            <string notr="true">background-color: rgb(242, 248, 253)</string>
-           </property>
-           <property name="text">
-            <string>Yes</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QCheckBox" name="checkBoxTNo">
-           <property name="styleSheet">
-            <string notr="true">background-color: rgb(242, 248, 253)</string>
-           </property>
-           <property name="text">
-            <string>No</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <widget class="QLabel" name="labelLink">
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(242, 248, 253)</string>
-         </property>
-         <property name="text">
-          <string>Link</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QDateEdit" name="dateEdit">
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(242, 248, 253)</string>
-         </property>
-         <property name="dateTime">
-          <datetime>
-           <hour>20</hour>
-           <minute>0</minute>
-           <second>0</second>
-           <year>2021</year>
-           <month>12</month>
-           <day>30</day>
-          </datetime>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QTimeEdit" name="timeEdit">
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(242, 248, 253)</string>
-         </property>
-         <property name="dateTime">
-          <datetime>
-           <hour>9</hour>
-           <minute>0</minute>
-           <second>0</second>
-           <year>2021</year>
-           <month>12</month>
-           <day>27</day>
-          </datetime>
-         </property>
-         <property name="time">
-          <time>
-           <hour>9</hour>
-           <minute>0</minute>
-           <second>0</second>
-          </time>
-         </property>
-        </widget>
-       </item>
       </layout>
-     </item>
-    </layout>
-   </widget>
-  </widget>
-  <widget class="QPushButton" name="pushButtonBack">
-   <property name="geometry">
-    <rect>
-     <x>211</x>
-     <y>721</y>
-     <width>93</width>
-     <height>29</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton {
-
+     </widget>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_6">
+      <item>
+       <widget class="QPushButton" name="pushButtonLogout">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
     background-color: rgb(242, 189, 76); 
-
-    border: none; 
-
+    border: none;
+     border-radius: 5px; 
     color: rgb(0, 0, 0); 
-
     font: 16px;
-
+	padding: 5 20px;
 } 
 
 QPushButton:hover { 
-
     background-color: rgb(245, 149, 66); 
-
     border: none; 
-
+    border-radius: 5px; 
     color: rgb(0, 43, 255); 
-
 }</string>
-   </property>
-   <property name="text">
-    <string>Back</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButtonSubmit">
-   <property name="geometry">
-    <rect>
-     <x>537</x>
-     <y>721</y>
-     <width>93</width>
-     <height>29</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton {
-
-    background-color: rgb(242, 189, 76); 
-
-    border: none; 
-
-    color: rgb(0, 0, 0); 
-
-    font: 16px;
-
-} 
-
-QPushButton:hover { 
-
-    background-color: rgb(245, 149, 66); 
-
-    border: none; 
-
-    color: rgb(0, 43, 255); 
-
-}</string>
-   </property>
-   <property name="text">
-    <string>Submit</string>
-   </property>
+        </property>
+        <property name="text">
+         <string>Log out</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>28</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>

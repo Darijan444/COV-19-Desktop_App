@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>628</width>
-    <height>414</height>
+    <height>433</height>
    </rect>
   </property>
   <property name="font">
@@ -32,7 +32,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 24pt &quot;.AppleSystemUIFont&quot;;
+     <string notr="true">font: 30pt &quot;.AppleSystemUIFont&quot;;
 background-color: rgb(104, 161, 229);</string>
     </property>
     <property name="text">
@@ -49,7 +49,13 @@ background-color: rgb(104, 161, 229);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(242, 248, 253)</string>
+     <string notr="true">QGroupBox { 
+     border-radius: 5px; 
+	background-color: rgb(242, 248, 253);
+ } 
+
+
+</string>
     </property>
     <property name="title">
      <string/>
@@ -89,25 +95,18 @@ background-color: rgb(104, 161, 229);</string>
      </property>
      <property name="styleSheet">
       <string notr="true">QPushButton {
-
     background-color: rgb(242, 189, 76); 
-
-    border: none; 
-
+    border: none;
+	border-radius: 5px; 
     color: rgb(0, 0, 0); 
-
     font: 16px;
-
 } 
 
 QPushButton:hover { 
-
     background-color: rgb(245, 149, 66); 
-
     border: none; 
-
+	border-radius: 5px; 
     color: rgb(0, 43, 255); 
-
 }</string>
      </property>
      <property name="text">
@@ -125,31 +124,19 @@ QPushButton:hover {
      </property>
      <property name="styleSheet">
       <string notr="true">QPushButton {
-
     background-color: rgb(242, 189, 76); 
-
-    border: none; 
-
+    border: none;
+	border-radius: 5px; 
     color: rgb(0, 0, 0); 
-
     font: 16px;
-
-border-radius: 55px;
-
-
-
 } 
 
 QPushButton:hover { 
-
     background-color: rgb(245, 149, 66); 
-
     border: none; 
-
+	border-radius: 5px; 
     color: rgb(0, 43, 255); 
-}
-
-  </string>
+}</string>
      </property>
      <property name="text">
       <string>Login</string>
@@ -172,33 +159,23 @@ QPushButton:hover {
      </property>
     </widget>
    </widget>
-   <widget class="QLabel" name="labelLink">
-    <property name="geometry">
-     <rect>
-      <x>490</x>
-      <y>350</y>
-      <width>101</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(104, 161, 229);</string>
-    </property>
-    <property name="text">
-     <string>External Link</string>
-    </property>
-   </widget>
    <widget class="QGroupBox" name="groupBox_2">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>250</y>
+      <y>260</y>
       <width>251</width>
       <height>121</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(242, 248, 253)</string>
+     <string notr="true">QGroupBox { 
+     border-radius: 5px; 
+	background-color: rgb(242, 248, 253);
+ } 
+
+
+</string>
     </property>
     <property name="title">
      <string/>
@@ -237,6 +214,41 @@ Report:               Issues</string>
       </widget>
      </item>
     </layout>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>526</x>
+      <y>341</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox { 
+     border-radius: 5px; 
+	background-color: rgb(242, 248, 253);
+ }</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QLabel" name="labelLink">
+     <property name="geometry">
+      <rect>
+       <x>12</x>
+       <y>12</y>
+       <width>67</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(104, 161, 229, 0);</string>
+     </property>
+     <property name="text">
+      <string>External Link</string>
+     </property>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">

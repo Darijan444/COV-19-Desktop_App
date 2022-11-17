@@ -35,6 +35,7 @@ private:
     QString birthday;
     QString NHINumber;
     QString phone;
+    QString QRNHINumber;
 };
 
 #endif // USERPROFILE_H

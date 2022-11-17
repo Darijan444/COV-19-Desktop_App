@@ -59,6 +59,8 @@ AdminUserDetail3::AdminUserDetail3(QWidget *parent, int num) :
 
     ui->labelvaccine1Name->setText(dose1Manufacturer);
     ui->labelvaccine2Name->setText(dose2Manufacturer);
+    ui->labelIssuedDate->setText(vaccinePassIssued);
+
 
 
 
@@ -104,6 +106,8 @@ AdminUserDetail3::AdminUserDetail3(QWidget *parent, int num) :
         update("FirstName",ui->lineEditFirstName->text());
         update("LastName",ui->lineEditLastName->text());
         update("Email",ui->lineEditEmail->text());
+        update("Birthday",ui->lineEditBirthday->text());
+        update("Phone",ui->lineEditPhone->text());
 
         //Refresh the page
         AdminUserDetail3 * adminUserDetail3 = new AdminUserDetail3(this,num);
@@ -181,6 +185,7 @@ void AdminUserDetail3::getUesrInfo()
         VaccinePass = query.value(20).toString();
         QRNHINumber = query.value(21).toString();
         QRVaccinePass = query.value(22).toString();
+        vaccinePassIssued = query.value(24).toString();
 
     } else {
         qWarning() << query.lastError();
@@ -250,7 +255,7 @@ void AdminUserDetail3::on_pushButtonDeletepushButtonQRNHI_clicked()
     QSqlQuery query(db);
     QString numString = QString::number(num);
 
-    query.exec("UPDATE user SET QRNHINumber = '' WHERE ID='"+numString+"'");
+    query.exec("UPDATE user SET QRNHINumber = '---' WHERE ID='"+numString+"'");
 }
 
 
@@ -268,6 +273,14 @@ void AdminUserDetail3::on_pushButtonUpdateQRVaccinePass_clicked()
     QString numString = QString::number(num);
 
     query.exec("UPDATE user SET QRVaccinePass = '"+filePath+"' WHERE ID='"+numString+"'");
+    query.exec("UPDATE user SET VaccinePass = 'Issued' WHERE ID='"+numString+"'");
+
+
+    QDateTime date = QDateTime::currentDateTime();
+    QString formattedTime = date.toString("dd.MM.yyyy hh:mm:ss");
+
+    query.exec("UPDATE user SET VaccinePassIssued = '"+formattedTime+"' WHERE ID='"+numString+"'");
+    ui->labelIssuedDate->setText(formattedTime);
 }
 
 
@@ -280,6 +293,10 @@ void AdminUserDetail3::on_pushButtonDeleteQRVaccinePass_clicked()
     QSqlQuery query(db);
     QString numString = QString::number(num);
 
-    query.exec("UPDATE user SET QRVaccinePass = '' WHERE ID='"+numString+"'");
+    query.exec("UPDATE user SET QRVaccinePass = '---' WHERE ID='"+numString+"'");
+    query.exec("UPDATE user SET VaccinePass = 'Deleted' WHERE ID='"+numString+"'");
+
+    query.exec("UPDATE user SET VaccinePassIssued = '---' WHERE ID='"+numString+"'");
+    ui->labelIssuedDate->setText("---");
 }
 
