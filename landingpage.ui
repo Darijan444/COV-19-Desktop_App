@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>628</width>
-    <height>364</height>
+    <height>414</height>
    </rect>
   </property>
   <property name="font">
@@ -63,8 +63,13 @@ background-color: rgb(104, 161, 229);</string>
        <height>21</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <bold>true</bold>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(242, 248, 253)</string>
+      <string notr="true">background-color: rgb(242, 248, 253,0)</string>
      </property>
      <property name="text">
       <string>Login or Signup </string>
@@ -160,7 +165,7 @@ QPushButton:hover {
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(242, 248, 253)</string>
+      <string notr="true">background-color: rgb(242, 248, 253,0)</string>
      </property>
      <property name="text">
       <string>or</string>
@@ -171,7 +176,7 @@ QPushButton:hover {
     <property name="geometry">
      <rect>
       <x>490</x>
-      <y>270</y>
+      <y>350</y>
       <width>101</width>
       <height>16</height>
      </rect>
@@ -183,6 +188,56 @@ QPushButton:hover {
      <string>External Link</string>
     </property>
    </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>250</y>
+      <width>251</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 248, 253)</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="font">
+        <font>
+         <bold>true</bold>
+         <underline>true</underline>
+         <kerning>false</kerning>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(242, 248, 253,0)</string>
+       </property>
+       <property name="text">
+        <string>What I can do?</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="styleSheet">
+        <string notr="true">font: 11pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(242, 248, 253,0)</string>
+       </property>
+       <property name="text">
+        <string>View:                  RAT test results
+View:                  Vaccination record
+Request:            Vaccine Pass
+Report:               RAT test result
+Report:               Issues</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -190,7 +245,7 @@ QPushButton:hover {
      <x>0</x>
      <y>0</y>
      <width>628</width>
-     <height>26</height>
+     <height>22</height>
     </rect>
    </property>
   </widget>
