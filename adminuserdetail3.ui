@@ -296,8 +296,8 @@ QPushButton:hover {
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>789</width>
-        <height>2073</height>
+        <width>780</width>
+        <height>2065</height>
        </rect>
       </property>
       <layout class="QGridLayout" name="gridLayout_2">
@@ -512,7 +512,7 @@ QPushButton:hover {
            </rect>
           </property>
           <property name="styleSheet">
-           <string notr="true">background-color: rgb(242, 248, 253)</string>
+           <string notr="true">background-color: rgb(242, 248, 253);</string>
           </property>
           <property name="title">
            <string/>
@@ -530,7 +530,7 @@ QPushButton:hover {
             <bool>false</bool>
            </property>
            <property name="styleSheet">
-            <string notr="true">background-color: rgb(242, 248, 253)</string>
+            <string notr="true">background-color: rgb(0, 0, 0,0)</string>
            </property>
            <property name="text">
             <string>NHI Number</string>
@@ -636,7 +636,7 @@ QPushButton:hover {
              <x>31</x>
              <y>350</y>
              <width>621</width>
-             <height>123</height>
+             <height>110</height>
             </rect>
            </property>
            <layout class="QHBoxLayout" name="horizontalLayout_13">
@@ -654,7 +654,7 @@ QPushButton:hover {
                      </font>
                     </property>
                     <property name="styleSheet">
-                     <string notr="true">background-color: rgb(242, 248, 253)</string>
+                     <string notr="true">background-color: rgb(0, 0, 0,0)</string>
                     </property>
                     <property name="text">
                      <string>First Name</string>
@@ -680,7 +680,8 @@ QPushButton:hover {
                      </font>
                     </property>
                     <property name="styleSheet">
-                     <string notr="true">background-color: rgb(242, 248, 253)</string>
+                     <string notr="true">background-color: rgb(0, 0, 0,0)
+</string>
                     </property>
                     <property name="text">
                      <string>Last Name</string>
@@ -708,7 +709,7 @@ QPushButton:hover {
                    </font>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">background-color: rgb(242, 248, 253)</string>
+                   <string notr="true">background-color: rgb(0, 0, 0,0)</string>
                   </property>
                   <property name="text">
                    <string>Date of Birth</string>
@@ -738,7 +739,8 @@ QPushButton:hover {
                    </font>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">background-color: rgb(242, 248, 253)</string>
+                   <string notr="true">background-color: rgb(0, 0, 0,0)
+</string>
                   </property>
                   <property name="text">
                    <string>Email Address</string>
@@ -764,7 +766,7 @@ QPushButton:hover {
                    </font>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">background-color: rgb(242, 248, 253)</string>
+                   <string notr="true">background-color: rgb(0, 0, 0,0)</string>
                   </property>
                   <property name="text">
                    <string>Mobile Number</string>
